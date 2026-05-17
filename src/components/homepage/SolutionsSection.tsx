@@ -28,8 +28,8 @@ const SolutionsSection: React.FC = () => {
           双轮驱动,全面提升组织效能
         </h2>
 
-        {/* Product Cards Stack - space-y-xl */}
-        <div className="space-y-xl">
+        {/* Product Cards - stacked on mobile, side-by-side on desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-xl">
           {/* Card 1: AI 原生组织 - lilac color block */}
           <ColorBlock variant="lilac" className="rounded-lg p-xxl">
             {/* Eyebrow - text-eyebrow with mb-md */}

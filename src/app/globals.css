@@ -23,7 +23,8 @@
   --color-semantic-success: #1ea64a;
   --color-overlay-scrim: #000000;
 
-  /* Spacing - Define as Tailwind spacing scale */
+  /* Spacing - keep Tailwind's numeric spacing utilities alive, then add design tokens. */
+  --spacing: 4px;
   --spacing-hair: 1px;
   --spacing-xxs: 4px;
   --spacing-xs: 8px;
@@ -48,9 +49,7 @@
   --font-family-mono: var(--font-mono), "SF Mono", Menlo, monospace;
 }
 
-/* Generate Tailwind spacing utilities */
-@layer utilities {
-  /* Margin utilities */
+/* Design-token spacing utilities used by the hand-authored homepage components. */
   .mt-hair { margin-top: var(--spacing-hair); }
   .mt-xxs { margin-top: var(--spacing-xxs); }
   .mt-xs { margin-top: var(--spacing-xs); }
@@ -132,15 +131,22 @@
   .gap-xl { gap: var(--spacing-xl); }
   .gap-xxl { gap: var(--spacing-xxl); }
   .gap-section { gap: var(--spacing-section); }
-}
+
+  .space-y-hair > :not(:last-child) { margin-bottom: var(--spacing-hair); }
+  .space-y-xxs > :not(:last-child) { margin-bottom: var(--spacing-xxs); }
+  .space-y-xs > :not(:last-child) { margin-bottom: var(--spacing-xs); }
+  .space-y-sm > :not(:last-child) { margin-bottom: var(--spacing-sm); }
+  .space-y-md > :not(:last-child) { margin-bottom: var(--spacing-md); }
+  .space-y-lg > :not(:last-child) { margin-bottom: var(--spacing-lg); }
+  .space-y-xl > :not(:last-child) { margin-bottom: var(--spacing-xl); }
+  .space-y-xxl > :not(:last-child) { margin-bottom: var(--spacing-xxl); }
+  .space-y-section > :not(:last-child) { margin-bottom: var(--spacing-section); }
 
 /* Base Styles */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
