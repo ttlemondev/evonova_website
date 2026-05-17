@@ -199,7 +199,54 @@
       ]
     }
   },
+  "about": {
+    "hero": {
+      "title": "Entroder",
+      "subtitle": "Build AI-Native Organizations, Unlock 100x Productivity",
+      "description": "Entroder is a company focused on AI-native organizational development and AI coding training. We are committed to helping organizations and individuals achieve quantum leaps in efficiency through AI technology, not only improving development efficiency but more importantly enhancing overall organizational operational efficiency."
+    },
+    "mission": {
+      "title": "Mission and Vision",
+      "missionTitle": "Mission",
+      "missionText": "Transform AI capabilities from individual skills to organizational productivity",
+      "visionTitle": "Vision",
+      "visionText": "Become the leader in AI-native organizational development"
+    },
+    "values": {
+      "title": "Core Values",
+      "systematic": {
+        "title": "Systematic",
+        "description": "Provide complete methodologies, not fragmented techniques"
+      },
+      "practical": {
+        "title": "Practical",
+        "description": "Not just training, but continuous coaching"
+      },
+      "resultOriented": {
+        "title": "Result-Oriented",
+        "description": "Pursue measurable efficiency improvements"
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your AI-Native Organization Journey?",
+      "description": "Contact us to learn how to enhance organizational effectiveness through AI technology",
+      "button": "Contact Us"
+    }
+  },
   "contact": {
+    "hero": {
+      "title": "Start Your AI-Native Organization Journey",
+      "subtitle": "Book a free consultation to learn how to enhance organizational effectiveness"
+    },
+    "info": {
+      "title": "Other Contact Methods",
+      "email": "Email",
+      "emailResponse": "Response within 24 hours on business days",
+      "wechat": "WeChat",
+      "wechatDescription": "Scan to add WeChat",
+      "wechatNote": "Get more information and instant consultation"
+    },
+    "formTitle": "Contact Us",
     "form": {
       "name": "Name",
       "email": "Email",
