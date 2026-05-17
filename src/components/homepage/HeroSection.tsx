@@ -39,7 +39,6 @@ const HeroSection: React.FC = () => {
         <div className="mt-xxl flex flex-wrap items-center justify-center gap-md">
           <Button
             variant="primary"
-            size="large"
             onClick={() => scrollToSection('solutions')}
             aria-label="了解 AI 原生组织"
           >
@@ -47,7 +46,6 @@ const HeroSection: React.FC = () => {
           </Button>
           <Button
             variant="secondary"
-            size="large"
             onClick={() => scrollToSection('courses')}
             aria-label="查看编程课程"
           >

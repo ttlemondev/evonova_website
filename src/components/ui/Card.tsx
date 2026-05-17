@@ -14,24 +14,24 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
       <div
         ref={ref}
         className={cn(
-          // Base styles - rounded-lg (24px) and padding (24px)
-          'rounded-[24px] p-6',
+          // Base styles from DESIGN.md - rounded-lg (24px) and padding-lg (24px)
+          'rounded-[var(--radius-lg)] p-[var(--spacing-lg)]',
           'transition-shadow duration-200 ease-out',
 
           // Default variant - white background with hairline border
           variant === 'default' && [
-            'bg-white border border-[#e6e6e6]',
+            'bg-[var(--color-canvas)] border border-[var(--color-hairline)]',
             'hover:shadow-[0_4px_16px_rgba(0,0,0,0.06)]',
           ],
 
-          // Color block variants
-          variant === 'lime' && 'bg-[#dceeb1] text-black',
-          variant === 'lilac' && 'bg-[#c5b0f4] text-black',
-          variant === 'cream' && 'bg-[#f4ecd6] text-black',
-          variant === 'mint' && 'bg-[#c8e6cd] text-black',
-          variant === 'pink' && 'bg-[#efd4d4] text-black',
-          variant === 'coral' && 'bg-[#f3c9b6] text-black',
-          variant === 'navy' && 'bg-[#1f1d3d] text-white',
+          // Color block variants using design tokens
+          variant === 'lime' && 'bg-[var(--color-block-lime)] text-[var(--color-ink)]',
+          variant === 'lilac' && 'bg-[var(--color-block-lilac)] text-[var(--color-ink)]',
+          variant === 'cream' && 'bg-[var(--color-block-cream)] text-[var(--color-ink)]',
+          variant === 'mint' && 'bg-[var(--color-block-mint)] text-[var(--color-ink)]',
+          variant === 'pink' && 'bg-[var(--color-block-pink)] text-[var(--color-ink)]',
+          variant === 'coral' && 'bg-[var(--color-block-coral)] text-[var(--color-ink)]',
+          variant === 'navy' && 'bg-[var(--color-block-navy)] text-[var(--color-inverse-ink)]',
 
           className
         )}

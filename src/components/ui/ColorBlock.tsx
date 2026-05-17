@@ -14,17 +14,17 @@ const ColorBlock = React.forwardRef<HTMLDivElement, ColorBlockProps>(
       <section
         ref={ref}
         className={cn(
-          // Base styles - rounded-lg (24px) and padding (48px)
-          'w-full rounded-[24px] p-12',
+          // Base styles from DESIGN.md - rounded-lg (24px) and padding-xxl (48px)
+          'w-full rounded-[var(--radius-lg)] p-[var(--spacing-xxl)]',
 
-          // Color block variants from design system
-          variant === 'lime' && 'bg-[#dceeb1] text-black',
-          variant === 'lilac' && 'bg-[#c5b0f4] text-black',
-          variant === 'cream' && 'bg-[#f4ecd6] text-black',
-          variant === 'mint' && 'bg-[#c8e6cd] text-black',
-          variant === 'pink' && 'bg-[#efd4d4] text-black',
-          variant === 'coral' && 'bg-[#f3c9b6] text-black',
-          variant === 'navy' && 'bg-[#1f1d3d] text-white',
+          // Color block variants using design tokens
+          variant === 'lime' && 'bg-[var(--color-block-lime)] text-[var(--color-ink)]',
+          variant === 'lilac' && 'bg-[var(--color-block-lilac)] text-[var(--color-ink)]',
+          variant === 'cream' && 'bg-[var(--color-block-cream)] text-[var(--color-ink)]',
+          variant === 'mint' && 'bg-[var(--color-block-mint)] text-[var(--color-ink)]',
+          variant === 'pink' && 'bg-[var(--color-block-pink)] text-[var(--color-ink)]',
+          variant === 'coral' && 'bg-[var(--color-block-coral)] text-[var(--color-ink)]',
+          variant === 'navy' && 'bg-[var(--color-block-navy)] text-[var(--color-inverse-ink)]',
 
           className
         )}

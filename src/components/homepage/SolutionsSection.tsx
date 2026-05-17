@@ -57,7 +57,6 @@ const SolutionsSection: React.FC = () => {
             {/* CTA Button */}
             <Button
               variant="primary"
-              size="large"
               onClick={() => window.location.href = '/courses/ai-native-org'}
               aria-label="了解 AI 原生组织详情"
             >
@@ -93,7 +92,6 @@ const SolutionsSection: React.FC = () => {
             {/* CTA Button */}
             <Button
               variant="primary"
-              size="large"
               onClick={() => scrollToSection('courses')}
               aria-label="查看编程课程"
             >

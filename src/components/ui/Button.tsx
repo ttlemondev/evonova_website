@@ -1,10 +1,11 @@
 import React from 'react';
+import { Slot } from '@radix-ui/react-slot';
 import { cn } from '@/lib/utils';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary';
-  size?: 'default' | 'large';
   loading?: boolean;
+  asChild?: boolean;
   children: React.ReactNode;
 }
 
@@ -12,56 +13,47 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       variant = 'primary',
-      size = 'default',
       loading = false,
       disabled,
+      asChild = false,
       className,
       children,
       ...props
     },
     ref
   ) => {
+    const Comp = asChild ? Slot : 'button';
     const isDisabled = disabled || loading;
 
     return (
-      <button
+      <Comp
         ref={ref}
         disabled={isDisabled}
         className={cn(
-          // Base styles - pill shape and typography
-          'rounded-[50px] font-[480] text-[20px] leading-[1.4] tracking-[-0.10px]',
+          // Base styles - pill shape and typography from DESIGN.md
+          'rounded-[50px] text-button',
           'transition-all duration-200 ease-out',
           'inline-flex items-center justify-center gap-2',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
 
-          // Variant styles
+          // Variant styles from DESIGN.md
           variant === 'primary' && [
-            'bg-black text-white',
+            'bg-primary text-on-primary',
+            'px-5 py-[10px]',
             'hover:scale-[1.02] active:scale-[0.98]',
-            'focus-visible:ring-black',
+            'focus-visible:ring-primary',
           ],
           variant === 'secondary' && [
-            'bg-white text-black border border-[#e6e6e6]',
-            'hover:border-black hover:shadow-sm',
-            'active:scale-[0.98]',
-            'focus-visible:ring-black',
-          ],
-
-          // Size styles
-          size === 'default' && [
-            variant === 'primary' && 'px-5 py-[10px]',
-            variant === 'secondary' && 'px-[18px] py-2 pb-[10px]',
-          ],
-          size === 'large' && [
-            variant === 'primary' && 'px-8 py-3',
-            variant === 'secondary' && 'px-7 py-[10px] pb-3',
+            'bg-canvas text-ink',
+            'px-[18px] py-2 pb-[10px]',
+            'hover:shadow-sm active:scale-[0.98]',
+            'focus-visible:ring-primary',
           ],
 
           // Disabled state
           isDisabled && [
-            'opacity-40 cursor-not-allowed',
-            'hover:scale-100 active:scale-100',
-            variant === 'secondary' && 'hover:border-[#e6e6e6] hover:shadow-none',
+            'opacity-50 cursor-not-allowed',
+            'hover:scale-100 active:scale-100 hover:shadow-none',
           ],
 
           className
@@ -74,6 +66,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <circle
               className="opacity-25"
@@ -91,7 +84,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           </svg>
         )}
         {children}
-      </button>
+      </Comp>
     );
   }
 );

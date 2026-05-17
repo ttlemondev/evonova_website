@@ -105,7 +105,6 @@ const CoursesSection: React.FC = () => {
               <Link href={`/courses/${course.slug}`}>
                 <Button
                   variant="primary"
-                  size="default"
                   className="w-full"
                   aria-label={`了解 ${course.title} 详情`}
                 >

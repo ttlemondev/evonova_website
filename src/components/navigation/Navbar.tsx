@@ -72,7 +72,7 @@ const Navbar = () => {
 
             {/* CTA Button - Desktop */}
             <div className="hidden lg:block">
-              <Button variant="primary" size="default">
+              <Button variant="primary">
                 预约咨询
               </Button>
             </div>
@@ -154,7 +154,6 @@ const Navbar = () => {
           <div className="mt-auto">
             <Button
               variant="primary"
-              size="default"
               className="w-full"
               onClick={handleLinkClick}
             >

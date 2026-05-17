@@ -96,7 +96,6 @@ const PackagesSection: React.FC = () => {
               <Link href="/contact">
                 <Button
                   variant="primary"
-                  size="large"
                   className="w-full"
                   aria-label={`咨询 ${pkg.label} 方案`}
                 >
