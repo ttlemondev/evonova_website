@@ -1,8 +1,23 @@
+import HeroSection from "@/components/homepage/HeroSection";
+import ProblemsSection from "@/components/homepage/ProblemsSection";
+import SolutionsSection from "@/components/homepage/SolutionsSection";
+import ServicesSection from "@/components/homepage/ServicesSection";
+import CoursesSection from "@/components/homepage/CoursesSection";
+import PackagesSection from "@/components/homepage/PackagesSection";
+
 export default function HomePage() {
   return (
-    <div className="container mx-auto px-4 py-section">
-      <h1 className="text-display-xl text-center">熵序之间 Entroder</h1>
-      <p className="text-headline text-center mt-lg">构建 AI 原生组织,释放百倍生产力</p>
-    </div>
+    <>
+      <HeroSection />
+      <ProblemsSection />
+      <section id="solutions">
+        <SolutionsSection />
+      </section>
+      <ServicesSection />
+      <section id="courses">
+        <CoursesSection />
+      </section>
+      <PackagesSection />
+    </>
   );
 }
