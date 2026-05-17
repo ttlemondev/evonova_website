@@ -24,14 +24,14 @@ const HeroSection: React.FC = () => {
       id="hero"
       className="relative w-full overflow-hidden py-section px-6"
     >
-      {/* Dreamy gradient background with animated orbs */}
-      <div className="absolute inset-0 bg-gradient-to-br from-block-lilac/30 via-block-mint/20 to-block-lime/25">
-        {/* Large animated gradient orbs */}
+      {/* Vibrant dreamy gradient background with animated orbs */}
+      <div className="absolute inset-0 bg-gradient-to-br from-block-lilac/50 via-block-mint/40 to-block-lime/45">
+        {/* Large animated gradient orbs with stronger colors */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-[10%] -left-[5%] w-[600px] h-[600px] bg-gradient-to-br from-block-lilac/40 to-transparent rounded-full blur-3xl animate-float-slow" />
-          <div className="absolute top-[20%] right-[5%] w-[500px] h-[500px] bg-gradient-to-bl from-block-mint/35 to-transparent rounded-full blur-3xl animate-float-slower" />
-          <div className="absolute -bottom-[10%] left-[20%] w-[550px] h-[550px] bg-gradient-to-tr from-block-lime/30 to-transparent rounded-full blur-3xl animate-float-slow" />
-          <div className="absolute top-[40%] left-[40%] w-[400px] h-[400px] bg-gradient-to-br from-block-cream/25 to-transparent rounded-full blur-3xl animate-float-slower" />
+          <div className="absolute -top-[10%] -left-[5%] w-[600px] h-[600px] bg-gradient-to-br from-block-lilac/60 to-transparent rounded-full blur-3xl animate-float-slow" />
+          <div className="absolute top-[20%] right-[5%] w-[500px] h-[500px] bg-gradient-to-bl from-block-mint/55 to-transparent rounded-full blur-3xl animate-float-slower" />
+          <div className="absolute -bottom-[10%] left-[20%] w-[550px] h-[550px] bg-gradient-to-tr from-block-lime/50 to-transparent rounded-full blur-3xl animate-float-slow" />
+          <div className="absolute top-[40%] left-[40%] w-[400px] h-[400px] bg-gradient-to-br from-block-cream/45 to-transparent rounded-full blur-3xl animate-float-slower" />
         </div>
 
         {/* Subtle dot pattern overlay */}
@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
         </svg>
 
         {/* Light overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-canvas/40" />
+        <div className="absolute inset-0 bg-canvas/30" />
       </div>
 
       <div className="relative mx-auto max-w-[1280px] text-center">
