@@ -22,9 +22,45 @@ const HeroSection: React.FC = () => {
   return (
     <section
       id="hero"
-      className="w-full bg-surface-soft py-section px-6"
+      className="relative w-full overflow-hidden py-section px-6"
     >
-      <div className="mx-auto max-w-[1280px] text-center">
+      {/* Background with gradient and geometric pattern */}
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-soft via-canvas to-canvas">
+        {/* Geometric grid pattern */}
+        <svg
+          className="absolute inset-0 h-full w-full opacity-[0.03]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="hero-grid"
+              width="80"
+              height="80"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 80 0 L 0 0 0 80"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hero-grid)" />
+        </svg>
+
+        {/* Abstract floating lines */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-[10%] left-[5%] w-[300px] h-[1px] bg-gradient-to-r from-transparent via-ink/5 to-transparent animate-float-slow" />
+          <div className="absolute top-[30%] right-[10%] w-[400px] h-[1px] bg-gradient-to-r from-transparent via-ink/5 to-transparent animate-float-slower" />
+          <div className="absolute bottom-[20%] left-[15%] w-[350px] h-[1px] bg-gradient-to-r from-transparent via-ink/5 to-transparent animate-float-slow" />
+        </div>
+
+        {/* Radial gradient overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-canvas/30" />
+      </div>
+
+      <div className="relative mx-auto max-w-[1280px] text-center">
         {/* Main Title - text-display-xl */}
         <h1 className="text-display-xl text-ink">
           {t('title')}
