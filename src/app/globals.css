@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-/* Design System Colors */
-:root {
+@theme {
+  /* Colors */
   --color-primary: #000000;
   --color-on-primary: #ffffff;
   --color-ink: #000000;
@@ -22,30 +22,6 @@
   --color-accent-magenta: #ff3d8b;
   --color-semantic-success: #1ea64a;
   --color-overlay-scrim: #000000;
-}
-
-@theme inline {
-  /* Colors */
-  --color-primary: var(--color-primary);
-  --color-on-primary: var(--color-on-primary);
-  --color-ink: var(--color-ink);
-  --color-canvas: var(--color-canvas);
-  --color-inverse-canvas: var(--color-inverse-canvas);
-  --color-inverse-ink: var(--color-inverse-ink);
-  --color-on-inverse-soft: var(--color-on-inverse-soft);
-  --color-hairline: var(--color-hairline);
-  --color-hairline-soft: var(--color-hairline-soft);
-  --color-surface-soft: var(--color-surface-soft);
-  --color-block-lime: var(--color-block-lime);
-  --color-block-lilac: var(--color-block-lilac);
-  --color-block-cream: var(--color-block-cream);
-  --color-block-pink: var(--color-block-pink);
-  --color-block-mint: var(--color-block-mint);
-  --color-block-coral: var(--color-block-coral);
-  --color-block-navy: var(--color-block-navy);
-  --color-accent-magenta: var(--color-accent-magenta);
-  --color-semantic-success: var(--color-semantic-success);
-  --color-overlay-scrim: var(--color-overlay-scrim);
 
   /* Spacing */
   --spacing-hair: 1px;
@@ -67,23 +43,15 @@
   --radius-pill: 50px;
   --radius-full: 9999px;
 
-  /* Typography - Font Sizes */
-  --font-size-display-xl: 86px;
-  --font-size-display-lg: 64px;
-  --font-size-headline: 26px;
-  --font-size-subhead: 26px;
-  --font-size-card-title: 24px;
-  --font-size-body-lg: 20px;
-  --font-size-body: 18px;
-  --font-size-body-sm: 16px;
-  --font-size-link: 20px;
-  --font-size-button: 20px;
-  --font-size-eyebrow: 18px;
-  --font-size-caption: 12px;
+  /* Font Families */
+  --font-family-sans: var(--font-sans), system-ui, -apple-system, sans-serif;
+  --font-family-mono: var(--font-mono), "SF Mono", Menlo, monospace;
 }
 
 /* Base Styles */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -92,91 +60,103 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1;
 }
 
 body {
   background: var(--color-canvas);
   color: var(--color-ink);
-  font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
-  font-size: var(--font-size-body);
+  font-family: var(--font-family-sans);
+  font-size: 18px;
   font-weight: 320;
   line-height: 1.45;
   letter-spacing: -0.26px;
 }
 
-/* Typography Utilities */
+/* Typography Utility Classes */
 .text-display-xl {
-  font-size: var(--font-size-display-xl);
+  font-family: var(--font-family-sans);
+  font-size: 86px;
   font-weight: 340;
   line-height: 1.00;
   letter-spacing: -1.72px;
 }
 
 .text-display-lg {
-  font-size: var(--font-size-display-lg);
+  font-family: var(--font-family-sans);
+  font-size: 64px;
   font-weight: 340;
   line-height: 1.10;
   letter-spacing: -0.96px;
 }
 
 .text-headline {
-  font-size: var(--font-size-headline);
+  font-family: var(--font-family-sans);
+  font-size: 26px;
   font-weight: 540;
   line-height: 1.35;
   letter-spacing: -0.26px;
 }
 
 .text-subhead {
-  font-size: var(--font-size-subhead);
+  font-family: var(--font-family-sans);
+  font-size: 26px;
   font-weight: 340;
   line-height: 1.35;
   letter-spacing: -0.26px;
 }
 
 .text-card-title {
-  font-size: var(--font-size-card-title);
+  font-family: var(--font-family-sans);
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.45;
   letter-spacing: 0;
 }
 
 .text-body-lg {
-  font-size: var(--font-size-body-lg);
+  font-family: var(--font-family-sans);
+  font-size: 20px;
   font-weight: 330;
   line-height: 1.40;
   letter-spacing: -0.14px;
 }
 
 .text-body {
-  font-size: var(--font-size-body);
+  font-family: var(--font-family-sans);
+  font-size: 18px;
   font-weight: 320;
   line-height: 1.45;
   letter-spacing: -0.26px;
 }
 
 .text-body-sm {
-  font-size: var(--font-size-body-sm);
+  font-family: var(--font-family-sans);
+  font-size: 16px;
   font-weight: 330;
   line-height: 1.45;
   letter-spacing: -0.14px;
 }
 
 .text-link {
-  font-size: var(--font-size-link);
+  font-family: var(--font-family-sans);
+  font-size: 20px;
   font-weight: 480;
   line-height: 1.40;
   letter-spacing: -0.10px;
 }
 
 .text-button {
-  font-size: var(--font-size-button);
+  font-family: var(--font-family-sans);
+  font-size: 20px;
   font-weight: 480;
   line-height: 1.40;
   letter-spacing: -0.10px;
 }
 
 .text-eyebrow {
-  font-size: var(--font-size-eyebrow);
+  font-family: var(--font-family-mono);
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.30;
   letter-spacing: 0.54px;
@@ -184,7 +164,8 @@ body {
 }
 
 .text-caption {
-  font-size: var(--font-size-caption);
+  font-family: var(--font-family-mono);
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.00;
   letter-spacing: 0.60px;

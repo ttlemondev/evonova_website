@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/navigation/Footer";
 import { SITE_CONFIG } from "@/lib/constants";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"]
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["400"]
+});
 
 export const metadata: Metadata = {
   title: `${SITE_CONFIG.name} ${SITE_CONFIG.englishName} - ${SITE_CONFIG.slogan}`,
@@ -20,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <body className={inter.variable}>
+      <body className={`${inter.variable} ${jetbrainsMono.variable}`}>
         <Navbar />
         <main className="min-h-screen pt-14">{children}</main>
         <Footer />
