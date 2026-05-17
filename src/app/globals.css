@@ -70,6 +70,16 @@
   .mb-xxl { margin-bottom: var(--spacing-xxl); }
   .mb-section { margin-bottom: var(--spacing-section); }
 
+  .mr-hair { margin-right: var(--spacing-hair); }
+  .mr-xxs { margin-right: var(--spacing-xxs); }
+  .mr-xs { margin-right: var(--spacing-xs); }
+  .mr-sm { margin-right: var(--spacing-sm); }
+  .mr-md { margin-right: var(--spacing-md); }
+  .mr-lg { margin-right: var(--spacing-lg); }
+  .mr-xl { margin-right: var(--spacing-xl); }
+  .mr-xxl { margin-right: var(--spacing-xxl); }
+  .mr-section { margin-right: var(--spacing-section); }
+
   /* Padding utilities */
   .p-hair { padding: var(--spacing-hair); }
   .p-xxs { padding: var(--spacing-xxs); }
