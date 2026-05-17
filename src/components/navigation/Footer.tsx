@@ -25,9 +25,9 @@ const Footer = () => {
   };
 
   const socialLinks = {
-    github: 'https://github.com/entroder',
-    twitter: 'https://twitter.com/entroder',
-    linkedin: 'https://linkedin.com/company/entroder',
+    github: 'https://github.com/topfx',
+    twitter: 'https://twitter.com/topfx',
+    linkedin: 'https://linkedin.com/company/topfx',
   };
 
   return (

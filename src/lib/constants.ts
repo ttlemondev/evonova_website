@@ -7,13 +7,12 @@ export const SITE_CONFIG = {
   description: '专注于 AI 原生组织转型与个人 AI 能力提升的专业培训机构',
   contact: {
     email: 'contact@topfx.top',
-    phone: '+86 138-0000-0000',
-    wechat: 'entroder-ai',
+    phone: '+65 8287709',
   },
   social: {
-    github: 'https://github.com/entroder',
-    twitter: 'https://twitter.com/entroder',
-    linkedin: 'https://linkedin.com/company/entroder',
+    github: 'https://github.com/topfx',
+    twitter: 'https://twitter.com/topfx',
+    linkedin: 'https://linkedin.com/company/topfx',
   },
 } as const;
 
