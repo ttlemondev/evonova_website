@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
       id="hero"
-      className="w-full bg-canvas py-section px-6"
+      className="w-full bg-surface-soft py-section px-6"
     >
       <div className="mx-auto max-w-[1280px] text-center">
         {/* Main Title - text-display-xl */}
