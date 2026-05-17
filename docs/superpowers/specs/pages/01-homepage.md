@@ -47,7 +47,7 @@
 
 **内容:**
 - Logo (左侧):
-  - 文字: "熵序之间 Entroder"
+  - 文字: "熵序之间 TopFX"
   - 字体: Headline (26px, weight 540)
   - 颜色: 黑色 (#000000)
   
@@ -72,7 +72,7 @@
 **内容:**
 
 **主标题:**
-- 文字: "熵序之间 Entroder"
+- 文字: "熵序之间 TopFX"
 - 字体: Display XL (86px, weight 340)
 - 行高: 1.00
 - 字间距: -1.72px
@@ -617,7 +617,7 @@
 
 内容:
 - 企业微信二维码 (图片)
-- 邮箱: contact@entroder.com (示例)
+- 邮箱: contact@topfx.top (示例)
 - 电话: (可选)
 
 **页脚信息:**
@@ -626,10 +626,10 @@
 - 内边距: 上 32px
 
 内容:
-- 公司名称: "熵序之间 Entroder"
+- 公司名称: "熵序之间 TopFX"
 - Slogan: "构建 AI 原生组织,释放百倍生产力"
 - 快速链接: 关于我们 | 课程 | 服务 | 联系我们
-- 版权信息: "© 2026 熵序之间 Entroder. All rights reserved."
+- 版权信息: "© 2026 熵序之间 TopFX. All rights reserved."
 
 ---
 
@@ -694,7 +694,7 @@
 ### 5.1 Meta 标签
 
 ```html
-<title>熵序之间 Entroder - 构建 AI 原生组织,释放百倍生产力</title>
+<title>熵序之间 TopFX - 构建 AI 原生组织,释放百倍生产力</title>
 <meta name="description" content="熵序之间提供 AI 原生组织建设和 AI 编程培训服务,帮助企业实现 100 倍人效提升。提供系统化培训和实战陪跑,从组织变革到开发效率全面提升。">
 <meta name="keywords" content="AI 原生组织,AI 编程培训,Claude Code,组织效率,开发效率,数字员工,CEO 驾驶舱">
 ```
@@ -705,10 +705,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "熵序之间 Entroder",
+  "name": "熵序之间 TopFX",
   "description": "AI 原生组织建设和 AI 编程培训",
-  "url": "https://entroder.com",
-  "logo": "https://entroder.com/logo.png"
+  "url": "https://topfx.top",
+  "logo": "https://topfx.top/logo.png"
 }
 ```
 

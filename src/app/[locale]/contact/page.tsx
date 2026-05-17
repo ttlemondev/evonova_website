@@ -40,8 +40,8 @@ export default function ContactPage() {
             <div>
               <h3 className="text-card-title mb-4">{t('contact.info.email')}</h3>
               <p className="text-body mb-2">
-                <a href="mailto:contact@entroder.com" className="text-primary hover:underline">
-                  contact@entroder.com
+                <a href="mailto:contact@topfx.top" className="text-primary hover:underline">
+                  contact@topfx.top
                 </a>
               </p>
               <p className="text-body-sm text-gray-600">

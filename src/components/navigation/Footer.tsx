@@ -20,9 +20,8 @@ const Footer = () => {
 
   // Contact info - hardcoded as it's not in translations
   const contactInfo = {
-    email: 'contact@entroder.com',
-    phone: '+86 138-0000-0000',
-    wechat: 'entroder-ai',
+    email: 'contact@topfx.top',
+    phone: '+65 8287709',
   };
 
   const socialLinks = {
@@ -72,7 +71,6 @@ const Footer = () => {
                 {contactInfo.email}
               </a>
               <p>{contactInfo.phone}</p>
-              <p>微信: {contactInfo.wechat}</p>
             </div>
           </div>
         </div>

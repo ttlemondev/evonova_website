@@ -9,13 +9,13 @@ export default function AboutPage() {
   const t = useTranslations();
 
   return (
-    <>
+    <>TopFX
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-24">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-display-lg mb-6">
             {t('about.hero.title')}
-          </h1>
+          </h1>TopFX
           <p className="text-subhead mb-8">
             {t('about.hero.subtitle')}
           </p>

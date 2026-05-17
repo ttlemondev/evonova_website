@@ -1,8 +1,8 @@
-# Entroder Website Implementation Plan
+# TopFX Website Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a production-ready website for Entroder (熵序之间), an AI training company, with 8 pages including a single-page scrolling homepage and 7 detail pages.
+**Goal:** Build a production-ready website for TopFX (熵序之间), an AI training company, with 8 pages including a single-page scrolling homepage and 7 detail pages.
 
 **Architecture:** Next.js 15 App Router with Tailwind CSS, following the Figma-inspired design system from DESIGN.md. All UI components will be generated using the ui-ux-pro-max skill to ensure high-quality, production-grade frontend code. The homepage uses a single-page scrolling design with 8 sections, while other pages are standard routed pages.
 
@@ -254,12 +254,12 @@ Create `src/lib/constants.ts`:
 ```typescript
 export const SITE_CONFIG = {
   name: "熵序之间",
-  nameEn: "Entroder",
+  nameEn: "TopFX",
   slogan: "构建 AI 原生组织,释放百倍生产力",
   subSlogan: "不止 10 倍开发效率,更是 100 倍组织效能",
   description: "熵序之间提供 AI 原生组织建设和 AI 编程培训服务,帮助企业实现 100 倍人效提升。",
-  url: "https://entroder.com",
-  email: "contact@entroder.com",
+  url: "https://topfx.top",
+  email: "contact@topfx.top",
 } as const;
 
 export const NAV_LINKS = [

@@ -120,7 +120,7 @@
 
 **联系方式:**
 - 企业微信二维码
-- 邮箱: contact@entroder.com
+- 邮箱: contact@topfx.top
 
 **特别说明:**
 - 本课程为私董会级别,需要审核报名资格

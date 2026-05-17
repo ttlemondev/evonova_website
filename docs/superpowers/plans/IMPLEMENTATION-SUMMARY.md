@@ -1,4 +1,4 @@
-# Entroder Website Implementation Summary
+# TopFX Website Implementation Summary
 
 **Status:** Ready for implementation  
 **Main Plan:** `2026-05-17-entroder-website-implementation.md`  
@@ -8,7 +8,7 @@
 
 ## Overview
 
-This document provides a high-level summary of the implementation plan for the Entroder (熵序之间) website. The complete detailed plan is in `2026-05-17-entroder-website-implementation.md`.
+This document provides a high-level summary of the implementation plan for the TopFX (熵序之间) website. The complete detailed plan is in `2026-05-17-entroder-website-implementation.md`.
 
 ---
 
