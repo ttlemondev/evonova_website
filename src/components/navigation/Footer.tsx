@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           <div>
             <h3 className="text-headline mb-4">
-              {tSite('name')} {tSite('englishName')}
+              {tSite('name')}
             </h3>
             <p className="text-body-lg opacity-80">
               {tSite('slogan')}
@@ -81,7 +81,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-body-sm opacity-60">
-            {tFooter('copyright', { year: currentYear, name: tSite('name'), englishName: tSite('englishName') })}
+            {tFooter('copyright', { year: currentYear, name: tSite('name') })}
           </p>
 
           <div className="flex gap-6">

@@ -221,6 +221,6 @@
     }
   },
   "footer": {
-    "copyright": "© {year} {name} {englishName}. All rights reserved."
+    "copyright": "© {year} {name}. All rights reserved."
   }
 }

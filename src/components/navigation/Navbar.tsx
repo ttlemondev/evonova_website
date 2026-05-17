@@ -61,7 +61,7 @@ const Navbar = () => {
               href={`/${locale}`}
               className="text-headline flex-shrink-0 hover:opacity-80 transition-opacity duration-200"
             >
-              {tSite('name')} {tSite('englishName')}
+              {tSite('name')}
             </Link>
 
             <div className="hidden lg:flex items-center gap-8">
