@@ -83,9 +83,11 @@ const Navbar = () => {
             </div>
 
             <div className="hidden lg:block">
-              <Button variant="primary">
-                {t('cta')}
-              </Button>
+              <Link href={`/${locale}/contact`}>
+                <Button variant="primary">
+                  {t('cta')}
+                </Button>
+              </Link>
             </div>
 
             <button
@@ -165,13 +167,14 @@ const Navbar = () => {
           </nav>
 
           <div className="mt-auto">
-            <Button
-              variant="primary"
-              className="w-full"
-              onClick={handleLinkClick}
-            >
-              {t('cta')}
-            </Button>
+            <Link href={`/${locale}/contact`} onClick={handleLinkClick}>
+              <Button
+                variant="primary"
+                className="w-full"
+              >
+                {t('cta')}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
