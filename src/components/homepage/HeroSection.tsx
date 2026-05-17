@@ -24,40 +24,54 @@ const HeroSection: React.FC = () => {
       id="hero"
       className="relative w-full overflow-hidden py-section px-6"
     >
-      {/* Background with gradient and geometric pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-surface-soft via-canvas to-canvas">
-        {/* Geometric grid pattern */}
+      {/* Enhanced background with visible gradient and patterns */}
+      <div className="absolute inset-0 bg-gradient-to-br from-surface-soft via-canvas to-surface-soft">
+        {/* Geometric dot pattern - more visible */}
         <svg
-          className="absolute inset-0 h-full w-full opacity-[0.03]"
+          className="absolute inset-0 h-full w-full opacity-[0.15]"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
             <pattern
-              id="hero-grid"
-              width="80"
-              height="80"
+              id="hero-dots"
+              width="40"
+              height="40"
               patternUnits="userSpaceOnUse"
             >
-              <path
-                d="M 80 0 L 0 0 0 80"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-              />
+              <circle cx="2" cy="2" r="1" fill="currentColor" />
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#hero-grid)" />
+          <rect width="100%" height="100%" fill="url(#hero-dots)" />
         </svg>
 
-        {/* Abstract floating lines */}
+        {/* Diagonal lines pattern */}
+        <svg
+          className="absolute inset-0 h-full w-full opacity-[0.08]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="hero-lines"
+              width="100"
+              height="100"
+              patternUnits="userSpaceOnUse"
+              patternTransform="rotate(45)"
+            >
+              <line x1="0" y1="0" x2="0" y2="100" stroke="currentColor" strokeWidth="1" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hero-lines)" />
+        </svg>
+
+        {/* Animated gradient orbs */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-[10%] left-[5%] w-[300px] h-[1px] bg-gradient-to-r from-transparent via-ink/5 to-transparent animate-float-slow" />
-          <div className="absolute top-[30%] right-[10%] w-[400px] h-[1px] bg-gradient-to-r from-transparent via-ink/5 to-transparent animate-float-slower" />
-          <div className="absolute bottom-[20%] left-[15%] w-[350px] h-[1px] bg-gradient-to-r from-transparent via-ink/5 to-transparent animate-float-slow" />
+          <div className="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-block-lilac/10 rounded-full blur-3xl animate-float-slow" />
+          <div className="absolute bottom-[10%] right-[15%] w-[400px] h-[400px] bg-block-mint/10 rounded-full blur-3xl animate-float-slower" />
+          <div className="absolute top-[50%] right-[20%] w-[300px] h-[300px] bg-block-lime/8 rounded-full blur-3xl animate-float-slow" />
         </div>
 
-        {/* Radial gradient overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-canvas/30" />
+        {/* Subtle vignette */}
+        <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-canvas/50" />
       </div>
 
       <div className="relative mx-auto max-w-[1280px] text-center">
