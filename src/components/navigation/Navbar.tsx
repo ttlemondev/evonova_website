@@ -14,10 +14,10 @@ const Navbar = () => {
   const locale = useLocale();
 
   const navLinks = [
-    { label: t('home'), href: `/${locale}#hero` },
+    { label: t('home'), href: `/${locale}` },
     { label: t('courses'), href: `/${locale}#courses` },
-    { label: t('about'), href: `/${locale}#about` },
-    { label: t('contact'), href: `/${locale}#contact` },
+    { label: t('about'), href: `/${locale}/about` },
+    { label: t('contact'), href: `/${locale}/contact` },
   ];
 
   useEffect(() => {
