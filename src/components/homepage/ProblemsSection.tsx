@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import Card from '@/components/ui/Card';
-import { PROBLEMS } from '@/lib/constants';
 
 /**
  * ProblemsSection - Displays common challenges faced by organizations
@@ -16,6 +16,14 @@ import { PROBLEMS } from '@/lib/constants';
  * - Cards: white background with rounded-lg (24px)
  */
 const ProblemsSection: React.FC = () => {
+  const t = useTranslations('problems');
+
+  const problems = [
+    { id: 'efficiency', key: 'efficiency' },
+    { id: 'learning', key: 'learning' },
+    { id: 'transformation', key: 'transformation' },
+  ];
+
   return (
     <section
       id="problems"
@@ -24,30 +32,30 @@ const ProblemsSection: React.FC = () => {
       <div className="mx-auto max-w-[1280px]">
         {/* Section Title - text-display-lg with mb-xxl */}
         <h2 className="text-display-lg text-ink text-center mb-xxl">
-          您的组织是否面临这些挑战?
+          {t('title')}
         </h2>
 
         {/* Problem Cards Grid - gap-xl */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl">
-          {PROBLEMS.map((problem) => (
+          {problems.map((problem) => (
             <Card
               key={problem.id}
               variant="default"
               className="flex flex-col"
             >
               {/* Icon - mb-sm */}
-              <div className="text-5xl mb-sm" role="img" aria-label={problem.title}>
-                {problem.icon}
+              <div className="text-5xl mb-sm" role="img" aria-label={t(`${problem.key}.title`)}>
+                {t(`${problem.key}.icon`)}
               </div>
 
               {/* Title - text-card-title with mb-sm */}
               <h3 className="text-card-title text-ink mb-sm">
-                {problem.title}
+                {t(`${problem.key}.title`)}
               </h3>
 
               {/* Description - text-body */}
               <p className="text-body text-ink">
-                {problem.description}
+                {t(`${problem.key}.description`)}
               </p>
             </Card>
           ))}

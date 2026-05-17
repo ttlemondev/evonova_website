@@ -2,15 +2,24 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
 import { cn } from '@/lib/utils';
 import Button from '@/components/ui/Button';
-import { NAV_LINKS, SITE_CONFIG } from '@/lib/constants';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const t = useTranslations('nav');
+  const tSite = useTranslations('site');
+  const locale = useLocale();
 
-  // Handle scroll effect
+  const navLinks = [
+    { label: t('home'), href: `/${locale}#hero` },
+    { label: t('courses'), href: `/${locale}#courses` },
+    { label: t('about'), href: `/${locale}#about` },
+    { label: t('contact'), href: `/${locale}#contact` },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -20,7 +29,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -49,17 +57,15 @@ const Navbar = () => {
       >
         <div className="max-w-[1440px] mx-auto h-full px-4 md:px-8">
           <div className="flex items-center justify-between h-full">
-            {/* Logo */}
             <Link
-              href="/"
+              href={`/${locale}`}
               className="text-headline flex-shrink-0 hover:opacity-80 transition-opacity duration-200"
             >
-              {SITE_CONFIG.name} {SITE_CONFIG.englishName}
+              {tSite('name')} {tSite('englishName')}
             </Link>
 
-            {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
-              {NAV_LINKS.map((link) => (
+              {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -68,16 +74,20 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href={locale === 'zh' ? '/en' : '/zh'}
+                className="text-link text-ink hover:opacity-60 transition-opacity duration-200"
+              >
+                {locale === 'zh' ? 'EN' : '中文'}
+              </Link>
             </div>
 
-            {/* CTA Button - Desktop */}
             <div className="hidden lg:block">
               <Button variant="primary">
-                预约咨询
+                {t('cta')}
               </Button>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -86,7 +96,7 @@ const Navbar = () => {
                 'focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2',
                 'transition-opacity duration-200 hover:opacity-60'
               )}
-              aria-label={isMenuOpen ? '关闭菜单' : '打开菜单'}
+              aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
               aria-expanded={isMenuOpen}
             >
               <svg
@@ -117,7 +127,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div
           className="fixed inset-0 z-40 bg-overlay-scrim/50 lg:hidden"
@@ -126,7 +135,6 @@ const Navbar = () => {
         />
       )}
 
-      {/* Mobile Menu Panel */}
       <div
         className={cn(
           'fixed top-14 right-0 bottom-0 z-50 w-[280px]',
@@ -136,9 +144,8 @@ const Navbar = () => {
         )}
       >
         <div className="flex flex-col h-full p-6">
-          {/* Mobile Navigation Links */}
           <nav className="flex flex-col gap-6 mb-8">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -148,16 +155,22 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href={locale === 'zh' ? '/en' : '/zh'}
+              onClick={handleLinkClick}
+              className="text-link text-ink hover:opacity-60 transition-opacity duration-200"
+            >
+              {locale === 'zh' ? 'EN' : '中文'}
+            </Link>
           </nav>
 
-          {/* Mobile CTA Button */}
           <div className="mt-auto">
             <Button
               variant="primary"
               className="w-full"
               onClick={handleLinkClick}
             >
-              预约咨询
+              {t('cta')}
             </Button>
           </div>
         </div>

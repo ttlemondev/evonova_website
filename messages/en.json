@@ -1,0 +1,226 @@
+{
+  "site": {
+    "name": "Entroder",
+    "englishName": "熵序之间",
+    "slogan": "Empowering Everyone to Master AI",
+    "description": "Professional training institution focused on AI-native organizational transformation and personal AI capability enhancement"
+  },
+  "nav": {
+    "home": "Home",
+    "courses": "Courses",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Book Consultation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us"
+  },
+  "hero": {
+    "title": "Entroder 熵序之间",
+    "mainSlogan": "Build AI-Native Organizations, Unlock 100x Productivity",
+    "subtitle": "Beyond 10x Development Efficiency, Achieve 100x Organizational Effectiveness",
+    "ctaPrimary": "Learn About AI-Native Organizations",
+    "ctaSecondary": "View Coding Courses"
+  },
+  "problems": {
+    "title": "Are You Facing These Challenges?",
+    "efficiency": {
+      "title": "Efficiency Anxiety",
+      "description": "Watching others achieve 10x efficiency with AI, but don't know where to start?",
+      "icon": "⚡"
+    },
+    "learning": {
+      "title": "Learning Dilemma",
+      "description": "AI tools emerge constantly, fragmented learning makes it hard to build systematic capabilities?",
+      "icon": "📚"
+    },
+    "transformation": {
+      "title": "Transformation Confusion",
+      "description": "Want AI transformation for your enterprise, but unsure how to plan and implement?",
+      "icon": "🎯"
+    }
+  },
+  "solutions": {
+    "title": "Dual-Engine Drive, Comprehensive Organizational Effectiveness Enhancement",
+    "aiNativeOrg": {
+      "eyebrow": "PRODUCT LINE 01",
+      "title": "AI-Native Organization",
+      "subtitle": "Enterprise-Level AI Transformation Solutions",
+      "features": [
+        "Build AI-driven organizational architecture and workflows",
+        "Achieve 100x organizational effectiveness improvement",
+        "Cultivate AI capabilities and cultural transformation for all employees",
+        "Continuous optimization and effectiveness evaluation system"
+      ],
+      "cta": "Learn More"
+    },
+    "aiCoding": {
+      "eyebrow": "PRODUCT LINE 02",
+      "title": "AI Coding Training",
+      "subtitle": "Complete Course System from Beginner to Advanced",
+      "features": [
+        "Complete learning path from zero to advanced",
+        "Achieve 10x development efficiency improvement",
+        "Master core skills of AI-assisted programming",
+        "Real project practice and continuous support"
+      ],
+      "cta": "View Courses"
+    }
+  },
+  "services": {
+    "title": "Systematic Empowerment and Practical Coaching",
+    "subtitle": "Raise the Floor, Lift the Ceiling",
+    "training": {
+      "eyebrow": "SERVICE 01",
+      "positioning": "Raise Organizational Floor",
+      "features": [
+        "Progressive ladder approach, focus on core knowledge",
+        "Small-loop design, complete closed-loop",
+        "Replicable standardized empowerment"
+      ],
+      "delivery": "Delivery Format:",
+      "deliveryDetail": "2-3 day intensive training, recommended max 15 participants per session",
+      "value": "Systematic training ensures teams master core methodologies and establish unified AI capability baseline"
+    },
+    "coaching": {
+      "eyebrow": "SERVICE 02",
+      "positioning": "Lift Team Ceiling",
+      "features": [
+        "Daily dedicated group support",
+        "Twice-weekly video consultations",
+        "Deep dive into business applications"
+      ],
+      "delivery": "Delivery Format:",
+      "deliveryDetail": "Continuous coaching service, typically 8 weeks minimum",
+      "value": "AI coding coaching solves uncertainty challenges in practice, accumulates team-specific expertise"
+    }
+  },
+  "courses": {
+    "title": "Four Courses, Covering Organizations to Individuals",
+    "duration": "Duration:",
+    "suitable": "Suitable for:",
+    "target": "Target:",
+    "cta": "Learn More",
+    "aiNativeOrg": {
+      "tag": "Organization",
+      "title": "AI-Native Organization Transformation",
+      "subtitle": "Enterprise-Level AI Transformation Solutions",
+      "description": "Help enterprises build AI-native organizational architecture, workflows, and cultural systems",
+      "duration": "3-6 months",
+      "level": "Enterprise Custom",
+      "features": [
+        "AI strategy planning and implementation roadmap design",
+        "Organizational architecture and process restructuring",
+        "AI toolchain selection and deployment",
+        "Company-wide AI capability training"
+      ],
+      "audience": "C-level executives, business leaders",
+      "target": "Build AI-native organization, achieve 100x organizational effectiveness improvement",
+      "price": "Contact for pricing"
+    },
+    "basic": {
+      "tag": "Beginner",
+      "title": "AI Fundamentals Course",
+      "subtitle": "Zero-to-One AI Tools Introduction",
+      "description": "Master mainstream AI tools usage methods, improve daily work efficiency",
+      "duration": "4 weeks",
+      "level": "Beginner",
+      "features": [
+        "ChatGPT, Claude and other conversational AI tools",
+        "Midjourney, Stable Diffusion image generation",
+        "AI-assisted writing and content creation",
+        "Prompt engineering fundamentals"
+      ],
+      "audience": "Beginners, product managers, QA engineers",
+      "target": "Generate MVP applications from scratch, master AI-assisted development basics",
+      "price": "¥2,999"
+    },
+    "intermediate": {
+      "tag": "Intermediate",
+      "title": "AI Advanced Practice Course",
+      "subtitle": "Deep Application and Process Optimization",
+      "description": "Learn deep integration of AI with professional tools, build automated workflows",
+      "duration": "8 weeks",
+      "level": "Intermediate",
+      "features": [
+        "AI coding assistants (Cursor, GitHub Copilot)",
+        "AI Agent development and application",
+        "Automated workflow design",
+        "RAG retrieval-augmented generation technology"
+      ],
+      "audience": "Developers with foundation, tech leads",
+      "target": "2X efficiency improvement, master complete AI coding ecosystem",
+      "price": "¥5,999"
+    },
+    "advanced": {
+      "tag": "Advanced",
+      "title": "AI Advanced Architecture Course",
+      "subtitle": "Enterprise-Level AI Solutions",
+      "description": "Master AI system architecture design, build enterprise-level AI applications",
+      "duration": "12 weeks",
+      "level": "Advanced",
+      "features": [
+        "LLM fine-tuning and deployment",
+        "Enterprise-level AI architecture design",
+        "Multimodal AI application development",
+        "AI security and privacy protection"
+      ],
+      "audience": "Senior developers, architects",
+      "target": "10X efficiency improvement, production-grade project practice",
+      "price": "¥12,999"
+    }
+  },
+  "packages": {
+    "title": "Choose the Right Package Based on Your Team Situation",
+    "suitable": "Suitable for:",
+    "goal": "Goal:",
+    "servicesTitle": "Service Combination",
+    "cta": "Consult Package",
+    "fullTeam": {
+      "label": "Full Team Efficiency",
+      "suitableFor": "Entire R&D department (product, QA, operations, development)",
+      "goal": "Enable every employee to improve efficiency with AI, enhance overall organizational operational efficiency",
+      "services": [
+        "Week 1: All staff attend beginner course",
+        "Week 3: Development team attends intermediate course",
+        "Continuous 8 weeks: AI coding coaching service"
+      ]
+    },
+    "eliteDev": {
+      "label": "Elite Development Team",
+      "suitableFor": "Pure development team with basic AI coding experience",
+      "goal": "Deep focus, significantly improve code output efficiency and engineering quality",
+      "services": [
+        "Pre-course: Self-study beginner course",
+        "Week 1: All staff attend intermediate course",
+        "Week 5: All staff attend advanced course",
+        "Continuous 8 weeks: AI coding coaching service"
+      ]
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company Name",
+      "phone": "Phone",
+      "message": "Message",
+      "required": "*",
+      "submit": "Submit Inquiry",
+      "submitting": "Submitting...",
+      "successMessage": "Submission successful! We will contact you soon.",
+      "errorMessage": "Submission failed, please try again later",
+      "validation": {
+        "nameRequired": "Please enter your name",
+        "emailRequired": "Please enter email",
+        "emailInvalid": "Please enter a valid email address",
+        "companyRequired": "Please enter company name",
+        "messageRequired": "Please enter message content"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {year} {name} {englishName}. All rights reserved."
+  }
+}

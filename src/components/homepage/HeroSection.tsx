@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 import { scrollToSection } from '@/lib/utils';
 
@@ -16,6 +17,8 @@ import { scrollToSection } from '@/lib/utils';
  * - Responsive: reduces font sizes on mobile
  */
 const HeroSection: React.FC = () => {
+  const t = useTranslations('hero');
+
   return (
     <section
       id="hero"
@@ -24,17 +27,17 @@ const HeroSection: React.FC = () => {
       <div className="mx-auto max-w-[1280px] text-center">
         {/* Main Title - text-display-xl */}
         <h1 className="text-display-xl text-ink">
-          熵序之间 Entroder
+          {t('title')}
         </h1>
 
         {/* Main Slogan - text-display-lg with mt-lg */}
         <p className="text-display-lg text-ink mt-lg">
-          构建 AI 原生组织,释放百倍生产力
+          {t('mainSlogan')}
         </p>
 
         {/* Subtitle - text-headline with mt-md */}
         <p className="text-headline text-ink mt-md">
-          不止 10 倍开发效率,更是 100 倍组织效能
+          {t('subtitle')}
         </p>
 
         {/* CTA Buttons - mt-xxl, gap-md */}
@@ -42,16 +45,16 @@ const HeroSection: React.FC = () => {
           <Button
             variant="primary"
             onClick={() => scrollToSection('solutions')}
-            aria-label="了解 AI 原生组织"
+            aria-label={t('ctaPrimary')}
           >
-            了解 AI 原生组织
+            {t('ctaPrimary')}
           </Button>
           <Button
             variant="secondary"
             onClick={() => scrollToSection('courses')}
-            aria-label="查看编程课程"
+            aria-label={t('ctaSecondary')}
           >
-            查看编程课程
+            {t('ctaSecondary')}
           </Button>
         </div>
       </div>

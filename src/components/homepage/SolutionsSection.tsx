@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 import ColorBlock from '@/components/ui/ColorBlock';
 import { scrollToSection } from '@/lib/utils';
@@ -17,6 +18,8 @@ import { scrollToSection } from '@/lib/utils';
  * - Eyebrow labels: text-eyebrow (figmaMono uppercase)
  */
 const SolutionsSection: React.FC = () => {
+  const t = useTranslations('solutions');
+
   return (
     <section
       id="solutions"
@@ -25,7 +28,7 @@ const SolutionsSection: React.FC = () => {
       <div className="mx-auto max-w-[1280px]">
         {/* Section Title - text-display-lg with mb-xxl */}
         <h2 className="text-display-lg text-ink text-center mb-xxl">
-          双轮驱动,全面提升组织效能
+          {t('title')}
         </h2>
 
         {/* Product Cards - stacked on mobile, side-by-side on desktop */}
@@ -34,34 +37,33 @@ const SolutionsSection: React.FC = () => {
           <ColorBlock variant="lilac" className="rounded-lg p-xxl">
             {/* Eyebrow - text-eyebrow with mb-md */}
             <div className="text-eyebrow text-ink mb-md">
-              PRODUCT LINE 01
+              {t('aiNativeOrg.eyebrow')}
             </div>
 
             {/* Title - text-display-lg with mb-sm */}
             <h3 className="text-display-lg text-ink mb-sm">
-              AI 原生组织
+              {t('aiNativeOrg.title')}
             </h3>
 
             {/* Subtitle - text-headline with mb-lg */}
             <p className="text-headline text-ink mb-lg">
-              企业级 AI 转型解决方案
+              {t('aiNativeOrg.subtitle')}
             </p>
 
             {/* Value List - text-body-lg with space-y-sm and mb-xl */}
             <ul className="text-body-lg text-ink space-y-sm mb-xl list-none">
-              <li>✓ 构建 AI 驱动的组织架构与工作流</li>
-              <li>✓ 实现 100 倍组织效能提升</li>
-              <li>✓ 全员 AI 能力培养与文化转型</li>
-              <li>✓ 持续优化与效果评估体系</li>
+              {(t.raw('aiNativeOrg.features') as string[]).map((feature, index) => (
+                <li key={index}>✓ {feature}</li>
+              ))}
             </ul>
 
             {/* CTA Button */}
             <Button
               variant="primary"
               onClick={() => window.location.href = '/courses/ai-native-org'}
-              aria-label="了解 AI 原生组织详情"
+              aria-label={t('aiNativeOrg.cta')}
             >
-              了解详情
+              {t('aiNativeOrg.cta')}
             </Button>
           </ColorBlock>
 
@@ -69,34 +71,33 @@ const SolutionsSection: React.FC = () => {
           <ColorBlock variant="mint" className="rounded-lg p-xxl">
             {/* Eyebrow - text-eyebrow with mb-md */}
             <div className="text-eyebrow text-ink mb-md">
-              PRODUCT LINE 02
+              {t('aiCoding.eyebrow')}
             </div>
 
             {/* Title - text-display-lg with mb-sm */}
             <h3 className="text-display-lg text-ink mb-sm">
-              AI 编程培训
+              {t('aiCoding.title')}
             </h3>
 
             {/* Subtitle - text-headline with mb-lg */}
             <p className="text-headline text-ink mb-lg">
-              从零基础到高级应用的完整课程体系
+              {t('aiCoding.subtitle')}
             </p>
 
             {/* Value List - text-body-lg with space-y-sm and mb-xl */}
             <ul className="text-body-lg text-ink space-y-sm mb-xl list-none">
-              <li>✓ 零基础入门到高级进阶的完整路径</li>
-              <li>✓ 实现 10 倍开发效率提升</li>
-              <li>✓ 掌握 AI 辅助编程的核心技能</li>
-              <li>✓ 真实项目实战与持续支持</li>
+              {(t.raw('aiCoding.features') as string[]).map((feature, index) => (
+                <li key={index}>✓ {feature}</li>
+              ))}
             </ul>
 
             {/* CTA Button */}
             <Button
               variant="primary"
               onClick={() => scrollToSection('courses')}
-              aria-label="查看编程课程"
+              aria-label={t('aiCoding.cta')}
             >
-              查看课程
+              {t('aiCoding.cta')}
             </Button>
           </ColorBlock>
         </div>

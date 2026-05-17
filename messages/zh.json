@@ -1,0 +1,226 @@
+{
+  "site": {
+    "name": "熵序之间",
+    "englishName": "Entroder",
+    "slogan": "让每个人都能驾驭 AI",
+    "description": "专注于 AI 原生组织转型与个人 AI 能力提升的专业培训机构"
+  },
+  "nav": {
+    "home": "首页",
+    "courses": "课程体系",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "cta": "预约咨询",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "quickLinks": "快速链接",
+    "contactUs": "联系我们"
+  },
+  "hero": {
+    "title": "熵序之间 Entroder",
+    "mainSlogan": "构建 AI 原生组织,释放百倍生产力",
+    "subtitle": "不止 10 倍开发效率,更是 100 倍组织效能",
+    "ctaPrimary": "了解 AI 原生组织",
+    "ctaSecondary": "查看编程课程"
+  },
+  "problems": {
+    "title": "您的组织是否面临这些挑战?",
+    "efficiency": {
+      "title": "效率焦虑",
+      "description": "看着别人用 AI 提升 10 倍效率,自己却不知从何下手?",
+      "icon": "⚡"
+    },
+    "learning": {
+      "title": "学习困境",
+      "description": "AI 工具层出不穷,碎片化学习难以形成系统能力?",
+      "icon": "📚"
+    },
+    "transformation": {
+      "title": "转型迷茫",
+      "description": "企业想要 AI 转型,但不知道如何规划和落地?",
+      "icon": "🎯"
+    }
+  },
+  "solutions": {
+    "title": "双轮驱动,全面提升组织效能",
+    "aiNativeOrg": {
+      "eyebrow": "PRODUCT LINE 01",
+      "title": "AI 原生组织",
+      "subtitle": "企业级 AI 转型解决方案",
+      "features": [
+        "构建 AI 驱动的组织架构与工作流",
+        "实现 100 倍组织效能提升",
+        "全员 AI 能力培养与文化转型",
+        "持续优化与效果评估体系"
+      ],
+      "cta": "了解详情"
+    },
+    "aiCoding": {
+      "eyebrow": "PRODUCT LINE 02",
+      "title": "AI 编程培训",
+      "subtitle": "从零基础到高级应用的完整课程体系",
+      "features": [
+        "零基础入门到高级进阶的完整路径",
+        "实现 10 倍开发效率提升",
+        "掌握 AI 辅助编程的核心技能",
+        "真实项目实战与持续支持"
+      ],
+      "cta": "查看课程"
+    }
+  },
+  "services": {
+    "title": "体系化赋能与实战陪跑",
+    "subtitle": "一手保住下限,一手拔高上限",
+    "training": {
+      "eyebrow": "SERVICE 01",
+      "positioning": "抬高组织下限",
+      "features": [
+        "阶梯式递进,聚焦主干知识",
+        "小循环设计,完整闭环",
+        "可复制的标准化赋能"
+      ],
+      "delivery": "交付形态:",
+      "deliveryDetail": "2-3 天集中培训,建议单场不超过 15 人",
+      "value": "系统化培训确保团队掌握核心方法论,建立统一的 AI 能力基线"
+    },
+    "coaching": {
+      "eyebrow": "SERVICE 02",
+      "positioning": "拔高团队上限",
+      "features": [
+        "每天专属群响应",
+        "每周 2 次视频会诊",
+        "举一反三,深入业务"
+      ],
+      "delivery": "交付形态:",
+      "deliveryDetail": "持续陪跑服务,通常 8 周起",
+      "value": "AI 编程辅导解决实战中的不确定性难题,沉淀团队独家经验"
+    }
+  },
+  "courses": {
+    "title": "四门课程,覆盖组织到个人",
+    "duration": "时长:",
+    "suitable": "适合:",
+    "target": "目标:",
+    "cta": "了解详情",
+    "aiNativeOrg": {
+      "tag": "组织级",
+      "title": "AI 原生组织转型",
+      "subtitle": "企业级 AI 转型解决方案",
+      "description": "帮助企业构建 AI 原生的组织架构、工作流程和文化体系",
+      "duration": "3-6 个月",
+      "level": "企业定制",
+      "features": [
+        "AI 战略规划与落地路径设计",
+        "组织架构与流程重构",
+        "AI 工具链选型与部署",
+        "全员 AI 能力培训"
+      ],
+      "audience": "企业高管、业务负责人",
+      "target": "构建 AI 原生组织,实现 100 倍组织效能提升",
+      "price": "面议"
+    },
+    "basic": {
+      "tag": "初级",
+      "title": "AI 基础应用课程",
+      "subtitle": "零基础入门 AI 工具",
+      "description": "掌握主流 AI 工具的使用方法,提升日常工作效率",
+      "duration": "4 周",
+      "level": "入门级",
+      "features": [
+        "ChatGPT、Claude 等对话式 AI 工具",
+        "Midjourney、Stable Diffusion 图像生成",
+        "AI 辅助写作与内容创作",
+        "提示词工程基础"
+      ],
+      "audience": "零基础学员、产品经理、测试工程师",
+      "target": "0 到 1 生成 MVP 应用,掌握 AI 辅助开发基础",
+      "price": "¥2,999"
+    },
+    "intermediate": {
+      "tag": "中级",
+      "title": "AI 进阶实战课程",
+      "subtitle": "深度应用与流程优化",
+      "description": "学习 AI 与专业工具的深度集成,构建自动化工作流",
+      "duration": "8 周",
+      "level": "进阶级",
+      "features": [
+        "AI 编程助手（Cursor、GitHub Copilot）",
+        "AI Agent 开发与应用",
+        "自动化工作流设计",
+        "RAG 检索增强生成技术"
+      ],
+      "audience": "有基础的开发者、技术 Leader",
+      "target": "2X 提效,掌握完整 AI 编程生态",
+      "price": "¥5,999"
+    },
+    "advanced": {
+      "tag": "高级",
+      "title": "AI 高级架构课程",
+      "subtitle": "企业级 AI 解决方案",
+      "description": "掌握 AI 系统架构设计,构建企业级 AI 应用",
+      "duration": "12 周",
+      "level": "高级",
+      "features": [
+        "LLM 微调与部署",
+        "企业级 AI 架构设计",
+        "多模态 AI 应用开发",
+        "AI 安全与隐私保护"
+      ],
+      "audience": "资深开发者、架构师",
+      "target": "10X 提效,生产级项目实战",
+      "price": "¥12,999"
+    }
+  },
+  "packages": {
+    "title": "根据您的团队情况,选择合适的套餐",
+    "suitable": "适合:",
+    "goal": "目标:",
+    "servicesTitle": "服务组合",
+    "cta": "咨询方案",
+    "fullTeam": {
+      "label": "全员提效型",
+      "suitableFor": "研发部门全员(产品、测试、运维、开发)",
+      "goal": "让每个员工都能用 AI 提效,提升整个组织运营效率",
+      "services": [
+        "第 1 周: 全员参加初级课程",
+        "第 3 周: 开发团队参加中级课程",
+        "持续 8 周: AI 编程辅导服务"
+      ]
+    },
+    "eliteDev": {
+      "label": "研发尖刀型",
+      "suitableFor": "纯开发团队,已有基础 AI 编程经验",
+      "goal": "深度聚焦,大幅提高代码产出效率与工程质量",
+      "services": [
+        "课前: 自学初级课程",
+        "第 1 周: 全员参加中级课程",
+        "第 5 周: 全员参加高级课程",
+        "持续 8 周: AI 编程辅导服务"
+      ]
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "company": "公司名称",
+      "phone": "电话",
+      "message": "留言",
+      "required": "*",
+      "submit": "提交咨询",
+      "submitting": "提交中...",
+      "successMessage": "提交成功!我们会尽快与您联系。",
+      "errorMessage": "提交失败,请稍后重试",
+      "validation": {
+        "nameRequired": "请输入您的姓名",
+        "emailRequired": "请输入邮箱",
+        "emailInvalid": "请输入有效的邮箱地址",
+        "companyRequired": "请输入公司名称",
+        "messageRequired": "请输入留言内容"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {year} {name} {englishName}. All rights reserved."
+  }
+}

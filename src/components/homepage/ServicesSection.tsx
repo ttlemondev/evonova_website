@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import Card from '@/components/ui/Card';
 
 /**
@@ -16,6 +17,8 @@ import Card from '@/components/ui/Card';
  * - No emojis as icons (violates DESIGN.md)
  */
 const ServicesSection: React.FC = () => {
+  const t = useTranslations('services');
+
   return (
     <section
       id="services"
@@ -24,12 +27,12 @@ const ServicesSection: React.FC = () => {
       <div className="mx-auto max-w-[1280px]">
         {/* Section Title - text-display-lg with mb-md */}
         <h2 className="text-display-lg text-ink text-center mb-md">
-          体系化赋能与实战陪跑
+          {t('title')}
         </h2>
 
         {/* Subtitle - text-headline with mt-md and mb-xxl */}
         <p className="text-headline text-ink text-center mt-md mb-xxl">
-          一手保住下限,一手拔高上限
+          {t('subtitle')}
         </p>
 
         {/* Service Cards Grid - gap-xl */}
@@ -38,29 +41,29 @@ const ServicesSection: React.FC = () => {
           <Card className="bg-canvas border border-hairline rounded-lg p-lg">
             {/* Eyebrow - text-eyebrow with mb-xs */}
             <div className="text-eyebrow text-ink mb-xs">
-              SERVICE 01
+              {t('training.eyebrow')}
             </div>
 
             {/* Positioning Title - text-card-title with mb-sm */}
             <h3 className="text-card-title text-ink mb-sm">
-              抬高组织下限
+              {t('training.positioning')}
             </h3>
 
             {/* Features List - text-body with space-y-xs and mb-md */}
             <ul className="text-body text-ink space-y-xs mb-md list-none">
-              <li>• 阶梯式递进,聚焦主干知识</li>
-              <li>• 小循环设计,完整闭环</li>
-              <li>• 可复制的标准化赋能</li>
+              {(t.raw('training.features') as string[]).map((feature, index) => (
+                <li key={index}>• {feature}</li>
+              ))}
             </ul>
 
             {/* Delivery Format - text-body-sm with mb-md */}
             <div className="text-body-sm text-ink bg-surface-soft rounded-md p-sm mb-md">
-              <strong>交付形态:</strong> 2-3 天集中培训,建议单场不超过 15 人
+              <strong>{t('training.delivery')}</strong> {t('training.deliveryDetail')}
             </div>
 
             {/* Value Statement - text-body */}
             <p className="text-body text-ink">
-              系统化培训确保团队掌握核心方法论,建立统一的 AI 能力基线
+              {t('training.value')}
             </p>
           </Card>
 
@@ -68,29 +71,29 @@ const ServicesSection: React.FC = () => {
           <Card className="bg-canvas border border-hairline rounded-lg p-lg">
             {/* Eyebrow - text-eyebrow with mb-xs */}
             <div className="text-eyebrow text-ink mb-xs">
-              SERVICE 02
+              {t('coaching.eyebrow')}
             </div>
 
             {/* Positioning Title - text-card-title with mb-sm */}
             <h3 className="text-card-title text-ink mb-sm">
-              拔高团队上限
+              {t('coaching.positioning')}
             </h3>
 
             {/* Features List - text-body with space-y-xs and mb-md */}
             <ul className="text-body text-ink space-y-xs mb-md list-none">
-              <li>• 每天专属群响应</li>
-              <li>• 每周 2 次视频会诊</li>
-              <li>• 举一反三,深入业务</li>
+              {(t.raw('coaching.features') as string[]).map((feature, index) => (
+                <li key={index}>• {feature}</li>
+              ))}
             </ul>
 
             {/* Delivery Format - text-body-sm with mb-md */}
             <div className="text-body-sm text-ink bg-surface-soft rounded-md p-sm mb-md">
-              <strong>交付形态:</strong> 持续陪跑服务,通常 8 周起
+              <strong>{t('coaching.delivery')}</strong> {t('coaching.deliveryDetail')}
             </div>
 
             {/* Value Statement - text-body */}
             <p className="text-body text-ink">
-              AI 编程辅导解决实战中的不确定性难题,沉淀团队独家经验
+              {t('coaching.value')}
             </p>
           </Card>
         </div>
