@@ -8,12 +8,13 @@ import { scrollToSection } from '@/lib/utils';
 /**
  * SolutionsSection - Displays two product lines with value propositions
  *
- * Design system:
- * - White background
- * - Padding: py-section
- * - Two product cards in vertical stack
- * - Card 1: AI 原生组织 (lilac background)
- * - Card 2: AI 编程培训 (mint background)
+ * Design system (DESIGN.md):
+ * - White canvas background
+ * - Padding: py-section (96px)
+ * - Typography: text-display-lg for title, text-headline for subtitles, text-body-lg for lists
+ * - Spacing: mb-xxl (48px) after title, space-y-xl (32px) between cards
+ * - Color blocks: lilac and mint with rounded-lg (24px) and p-xxl (48px)
+ * - Eyebrow labels: text-eyebrow (figmaMono uppercase)
  */
 const SolutionsSection: React.FC = () => {
   return (
@@ -22,32 +23,32 @@ const SolutionsSection: React.FC = () => {
       className="w-full bg-canvas py-section px-6"
     >
       <div className="mx-auto max-w-[1280px]">
-        {/* Section Title */}
-        <h2 className="text-display-lg text-center mb-xxl max-md:text-[36px] max-md:leading-[1.15]">
+        {/* Section Title - text-display-lg with mb-xxl */}
+        <h2 className="text-display-lg text-ink text-center mb-xxl">
           双轮驱动,全面提升组织效能
         </h2>
 
-        {/* Product Cards Stack */}
+        {/* Product Cards Stack - space-y-xl */}
         <div className="space-y-xl">
-          {/* Card 1: AI 原生组织 */}
+          {/* Card 1: AI 原生组织 - lilac color block */}
           <ColorBlock variant="lilac" className="rounded-lg p-xxl">
-            {/* Tag */}
-            <div className="text-eyebrow mb-md">
+            {/* Eyebrow - text-eyebrow with mb-md */}
+            <div className="text-eyebrow text-ink mb-md">
               PRODUCT LINE 01
             </div>
 
-            {/* Title */}
-            <h3 className="text-display-lg mb-sm max-md:text-[36px] max-md:leading-[1.15]">
+            {/* Title - text-display-lg with mb-sm */}
+            <h3 className="text-display-lg text-ink mb-sm">
               AI 原生组织
             </h3>
 
-            {/* Subtitle */}
-            <p className="text-headline mb-lg max-md:text-[20px] max-md:leading-[1.4]">
+            {/* Subtitle - text-headline with mb-lg */}
+            <p className="text-headline text-ink mb-lg">
               企业级 AI 转型解决方案
             </p>
 
-            {/* Value List */}
-            <ul className="text-body-lg space-y-sm mb-xl list-none">
+            {/* Value List - text-body-lg with space-y-sm and mb-xl */}
+            <ul className="text-body-lg text-ink space-y-sm mb-xl list-none">
               <li>✓ 构建 AI 驱动的组织架构与工作流</li>
               <li>✓ 实现 100 倍组织效能提升</li>
               <li>✓ 全员 AI 能力培养与文化转型</li>
@@ -64,25 +65,25 @@ const SolutionsSection: React.FC = () => {
             </Button>
           </ColorBlock>
 
-          {/* Card 2: AI 编程培训 */}
+          {/* Card 2: AI 编程培训 - mint color block */}
           <ColorBlock variant="mint" className="rounded-lg p-xxl">
-            {/* Tag */}
-            <div className="text-eyebrow mb-md">
+            {/* Eyebrow - text-eyebrow with mb-md */}
+            <div className="text-eyebrow text-ink mb-md">
               PRODUCT LINE 02
             </div>
 
-            {/* Title */}
-            <h3 className="text-display-lg mb-sm max-md:text-[36px] max-md:leading-[1.15]">
+            {/* Title - text-display-lg with mb-sm */}
+            <h3 className="text-display-lg text-ink mb-sm">
               AI 编程培训
             </h3>
 
-            {/* Subtitle */}
-            <p className="text-headline mb-lg max-md:text-[20px] max-md:leading-[1.4]">
+            {/* Subtitle - text-headline with mb-lg */}
+            <p className="text-headline text-ink mb-lg">
               从零基础到高级应用的完整课程体系
             </p>
 
-            {/* Value List */}
-            <ul className="text-body-lg space-y-sm mb-xl list-none">
+            {/* Value List - text-body-lg with space-y-sm and mb-xl */}
+            <ul className="text-body-lg text-ink space-y-sm mb-xl list-none">
               <li>✓ 零基础入门到高级进阶的完整路径</li>
               <li>✓ 实现 10 倍开发效率提升</li>
               <li>✓ 掌握 AI 辅助编程的核心技能</li>

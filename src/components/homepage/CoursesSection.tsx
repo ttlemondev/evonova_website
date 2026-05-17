@@ -9,10 +9,14 @@ import { COURSES } from '@/lib/constants';
 /**
  * CoursesSection - Displays four course cards in 2x2 grid
  *
- * Design system:
- * - White background
- * - Padding: py-section
- * - Four course cards with details and CTA
+ * Design system (DESIGN.md):
+ * - White canvas background
+ * - Padding: py-section (96px)
+ * - Typography: text-display-lg for title, text-card-title for course titles, text-body-sm for details
+ * - Spacing: mb-xxl (48px) after title, gap-lg (24px) between cards
+ * - Cards: white background with rounded-lg (24px) and p-lg (24px)
+ * - Eyebrow labels: text-eyebrow (figmaMono uppercase)
+ * - Color-coded tags using block colors
  */
 
 // Course data mapping with additional metadata
@@ -58,46 +62,46 @@ const CoursesSection: React.FC = () => {
       className="w-full bg-canvas py-section px-6"
     >
       <div className="mx-auto max-w-[1280px]">
-        {/* Section Title */}
-        <h2 className="text-display-lg text-center mb-xxl max-md:text-[36px] max-md:leading-[1.15]">
+        {/* Section Title - text-display-lg with mb-xxl */}
+        <h2 className="text-display-lg text-ink text-center mb-xxl">
           四门课程,覆盖组织到个人
         </h2>
 
-        {/* Course Cards Grid */}
+        {/* Course Cards Grid - gap-lg */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
           {courseData.map((course) => (
-            <Card key={course.id} className="bg-white border-hairline rounded-lg p-lg">
-              {/* Tag */}
+            <Card key={course.id} className="bg-canvas border border-hairline rounded-lg p-lg">
+              {/* Tag - text-eyebrow with mb-sm */}
               <span
-                className={`inline-block px-sm py-xxs rounded-pill text-eyebrow uppercase mb-sm ${course.tagColor}`}
+                className={`inline-block px-sm py-xxs rounded-pill text-eyebrow text-ink mb-sm ${course.tagColor}`}
               >
                 {course.tag}
               </span>
 
-              {/* Course Title */}
-              <h3 className="text-card-title mb-xs">
+              {/* Course Title - text-card-title with mb-xs */}
+              <h3 className="text-card-title text-ink mb-xs">
                 {course.title}
               </h3>
 
-              {/* Duration */}
-              <p className="text-body-sm text-gray-600 mb-sm">
+              {/* Duration - text-body-sm with mb-sm */}
+              <p className="text-body-sm text-ink mb-sm">
                 时长: {course.duration}
               </p>
 
-              {/* Highlights List */}
-              <ul className="text-body-sm space-y-xs mb-md list-none">
+              {/* Highlights List - text-body-sm with space-y-xs and mb-md */}
+              <ul className="text-body-sm text-ink space-y-xs mb-md list-none">
                 {course.features.slice(0, 4).map((feature, index) => (
                   <li key={index}>• {feature}</li>
                 ))}
               </ul>
 
-              {/* Audience */}
-              <p className="text-body-sm text-gray-600 mb-sm">
+              {/* Audience - text-body-sm with mb-sm */}
+              <p className="text-body-sm text-ink mb-sm">
                 <strong>适合:</strong> {course.audience}
               </p>
 
-              {/* Target */}
-              <div className="text-body bg-surface-soft rounded-md p-sm mb-md">
+              {/* Target - text-body with mb-md */}
+              <div className="text-body text-ink bg-surface-soft rounded-md p-sm mb-md">
                 <strong>目标:</strong> {course.target}
               </div>
 

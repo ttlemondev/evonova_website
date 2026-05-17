@@ -7,11 +7,13 @@ import { PROBLEMS } from '@/lib/constants';
 /**
  * ProblemsSection - Displays common challenges faced by organizations
  *
- * Design system:
- * - Background: bg-surface-soft
- * - Padding: py-section
+ * Design system (DESIGN.md):
+ * - Background: bg-surface-soft (off-white)
+ * - Padding: py-section (96px)
+ * - Typography: text-display-lg for title, text-card-title for card titles, text-body for descriptions
+ * - Spacing: mb-xxl (48px) after title, gap-xl (32px) between cards
  * - Grid layout: 1 column mobile, 2 columns tablet, 3 columns desktop
- * - Cards: white background with icon, title, and description
+ * - Cards: white background with rounded-lg (24px)
  */
 const ProblemsSection: React.FC = () => {
   return (
@@ -20,12 +22,12 @@ const ProblemsSection: React.FC = () => {
       className="w-full bg-surface-soft py-section px-6"
     >
       <div className="mx-auto max-w-[1280px]">
-        {/* Section Title */}
-        <h2 className="text-display-lg text-center mb-xxl max-md:text-[36px] max-md:leading-[1.15]">
+        {/* Section Title - text-display-lg with mb-xxl */}
+        <h2 className="text-display-lg text-ink text-center mb-xxl">
           您的组织是否面临这些挑战?
         </h2>
 
-        {/* Problem Cards Grid */}
+        {/* Problem Cards Grid - gap-xl */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl">
           {PROBLEMS.map((problem) => (
             <Card
@@ -33,18 +35,18 @@ const ProblemsSection: React.FC = () => {
               variant="default"
               className="flex flex-col"
             >
-              {/* Icon */}
+              {/* Icon - mb-sm */}
               <div className="text-5xl mb-sm" role="img" aria-label={problem.title}>
                 {problem.icon}
               </div>
 
-              {/* Title */}
-              <h3 className="text-card-title mb-sm">
+              {/* Title - text-card-title with mb-sm */}
+              <h3 className="text-card-title text-ink mb-sm">
                 {problem.title}
               </h3>
 
-              {/* Description */}
-              <p className="text-body text-ink/80">
+              {/* Description - text-body */}
+              <p className="text-body text-ink">
                 {problem.description}
               </p>
             </Card>

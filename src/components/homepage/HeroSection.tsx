@@ -7,10 +7,12 @@ import { scrollToSection } from '@/lib/utils';
 /**
  * HeroSection - Homepage hero section with main title, slogan, and CTAs
  *
- * Design system:
+ * Design system (DESIGN.md):
+ * - Monochrome: black text on white canvas
  * - Centered layout with max-width 1280px
- * - Vertical padding: 96px (py-section)
- * - Typography hierarchy: display-xl → display-lg → headline
+ * - Vertical padding: py-section (96px)
+ * - Typography: text-display-xl → text-display-lg → text-headline
+ * - Spacing: mt-lg (24px), mt-md (16px), mt-xxl (48px), gap-md (16px)
  * - Responsive: reduces font sizes on mobile
  */
 const HeroSection: React.FC = () => {
@@ -20,22 +22,22 @@ const HeroSection: React.FC = () => {
       className="w-full bg-canvas py-section px-6"
     >
       <div className="mx-auto max-w-[1280px] text-center">
-        {/* Main Title */}
-        <h1 className="text-display-xl max-md:text-[48px] max-md:leading-[1.1]">
+        {/* Main Title - text-display-xl */}
+        <h1 className="text-display-xl text-ink">
           熵序之间 Entroder
         </h1>
 
-        {/* Main Slogan */}
-        <p className="text-display-lg mt-lg max-md:text-[36px] max-md:leading-[1.15]">
+        {/* Main Slogan - text-display-lg with mt-lg */}
+        <p className="text-display-lg text-ink mt-lg">
           构建 AI 原生组织,释放百倍生产力
         </p>
 
-        {/* Subtitle */}
-        <p className="text-headline mt-md max-md:text-[20px] max-md:leading-[1.4]">
+        {/* Subtitle - text-headline with mt-md */}
+        <p className="text-headline text-ink mt-md">
           不止 10 倍开发效率,更是 100 倍组织效能
         </p>
 
-        {/* CTA Buttons */}
+        {/* CTA Buttons - mt-xxl, gap-md */}
         <div className="mt-xxl flex flex-wrap items-center justify-center gap-md">
           <Button
             variant="primary"

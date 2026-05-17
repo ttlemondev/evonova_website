@@ -8,10 +8,14 @@ import Button from '@/components/ui/Button';
 /**
  * PackagesSection - Displays two recommended package options
  *
- * Design system:
- * - Background: bg-surface-soft
- * - Padding: py-section
- * - Two package cards with colored borders
+ * Design system (DESIGN.md):
+ * - Background: bg-surface-soft (off-white)
+ * - Padding: py-section (96px)
+ * - Typography: text-display-lg for title, text-card-title for section titles, text-body for content
+ * - Spacing: mb-xxl (48px) after title, gap-xl (32px) between cards
+ * - Cards: white background with rounded-lg (24px) and p-xl (32px)
+ * - Eyebrow labels: text-eyebrow (figmaMono uppercase)
+ * - Color-coded tags and borders using block colors
  */
 
 const packages = [
@@ -31,7 +35,7 @@ const packages = [
   {
     id: 'elite-dev',
     label: '研发尖刀型',
-    tagColor: 'bg-block-navy text-white',
+    tagColor: 'bg-block-navy text-inverse-ink',
     borderColor: 'border-block-navy',
     suitableFor: '纯开发团队,已有基础 AI 编程经验',
     goal: '深度聚焦,大幅提高代码产出效率与工程质量',
@@ -51,42 +55,42 @@ const PackagesSection: React.FC = () => {
       className="w-full bg-surface-soft py-section px-6"
     >
       <div className="mx-auto max-w-[1280px]">
-        {/* Section Title */}
-        <h2 className="text-display-lg text-center mb-xxl max-md:text-[36px] max-md:leading-[1.15]">
+        {/* Section Title - text-display-lg with mb-xxl */}
+        <h2 className="text-display-lg text-ink text-center mb-xxl">
           根据您的团队情况,选择合适的套餐
         </h2>
 
-        {/* Package Cards Grid */}
+        {/* Package Cards Grid - gap-xl */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-xl">
           {packages.map((pkg) => (
             <Card
               key={pkg.id}
-              className={`bg-white rounded-lg p-xl border-2 ${pkg.borderColor}`}
+              className={`bg-canvas rounded-lg p-xl border-2 ${pkg.borderColor}`}
             >
-              {/* Tag Label */}
+              {/* Tag Label - text-eyebrow with mb-sm */}
               <span
-                className={`inline-block px-sm py-xxs rounded-pill text-eyebrow uppercase mb-sm ${pkg.tagColor}`}
+                className={`inline-block px-sm py-xxs rounded-pill text-eyebrow mb-sm ${pkg.tagColor}`}
               >
                 {pkg.label}
               </span>
 
-              {/* Suitable For */}
-              <p className="text-body mb-sm">
+              {/* Suitable For - text-body with mb-sm */}
+              <p className="text-body text-ink mb-sm">
                 <strong>适合:</strong> {pkg.suitableFor}
               </p>
 
-              {/* Goal */}
-              <p className="text-body mb-lg">
+              {/* Goal - text-body with mb-lg */}
+              <p className="text-body text-ink mb-lg">
                 <strong>目标:</strong> {pkg.goal}
               </p>
 
-              {/* Service Combination Title */}
-              <h3 className="text-card-title mb-md">
+              {/* Service Combination Title - text-card-title with mb-md */}
+              <h3 className="text-card-title text-ink mb-md">
                 服务组合
               </h3>
 
-              {/* Service List */}
-              <ul className="text-body-sm space-y-xs mb-xl list-none">
+              {/* Service List - text-body-sm with space-y-xs and mb-xl */}
+              <ul className="text-body-sm text-ink space-y-xs mb-xl list-none">
                 {pkg.services.map((service, index) => (
                   <li key={index}>• {service}</li>
                 ))}
