@@ -1,9 +1,12 @@
-// This file is only used for the root redirect
-// The actual layout is in [locale]/layout.tsx
+// Root layout - redirects to default locale
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <html>
+      <body>{children}</body>
+    </html>
+  );
 }
