@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer className="bg-inverse-canvas text-inverse-ink">
       <div className="max-w-[1440px] mx-auto px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-headline mb-4">
               {tSite('name')}
@@ -73,13 +73,27 @@ const Footer = () => {
               <p>{contactInfo.phone}</p>
             </div>
           </div>
+
+          <div>
+            <h4 className="text-body-lg font-[540] mb-4">{t('relatedProducts')}</h4>
+            <div className="flex flex-col gap-3 text-body-sm opacity-80">
+              <a
+                href="https://nexrouter.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-100 transition-opacity duration-200"
+              >
+                NexRouter
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="border-t border-on-inverse-soft/20 mb-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-body-sm opacity-60">
-            {tFooter('copyright', { year: currentYear, name: tSite('name') })}
+            {tFooter('copyright', { year: currentYear, name: tSite('fullName') })}
           </p>
 
           <div className="flex gap-6">

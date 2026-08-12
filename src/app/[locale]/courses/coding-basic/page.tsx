@@ -4,7 +4,7 @@ import CourseOutline from '@/components/courses/CourseOutline';
 import CourseCTA from '@/components/courses/CourseCTA';
 
 export const metadata: Metadata = {
-  title: 'Claude Code 基础课程 - 熵序之间',
+  title: 'Claude Code 基础课程 - TOPFX',
   description: '零基础入门，1 天时间用 Claude Code 从零构建完整的外卖点餐系统',
 };
 

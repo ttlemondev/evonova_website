@@ -4,7 +4,7 @@ import CourseOutline from '@/components/courses/CourseOutline';
 import CourseCTA from '@/components/courses/CourseCTA';
 
 export const metadata: Metadata = {
-  title: '规模化生产与代码信任构建 - 熵序之间',
+  title: '规模化生产与代码信任构建 - TOPFX',
   description: '超越常规工具使用，重点解决 AI Coding 在规模化开发和代码信任度方面的深水区挑战',
 };
 

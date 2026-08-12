@@ -4,7 +4,7 @@ import CourseOutline from '@/components/courses/CourseOutline';
 import CourseCTA from '@/components/courses/CourseCTA';
 
 export const metadata: Metadata = {
-  title: 'AI 原生组织转型课程 - 熵序之间',
+  title: 'AI 原生组织转型课程 - TOPFX',
   description: '帮助企业完成"组织操作系统升级",从传统组织转向 AI 原生组织',
 };
 

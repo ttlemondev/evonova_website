@@ -1,6 +1,7 @@
 {
   "site": {
-    "name": "熵序之间",
+    "name": "TOPFX",
+    "fullName": "TOPFX PTE. LTD.",
     "englishName": "",
     "slogan": "让每个人都能驾驭 AI",
     "description": "专注于 AI 原生组织转型与个人 AI 能力提升的专业培训机构"
@@ -14,10 +15,11 @@
     "openMenu": "打开菜单",
     "closeMenu": "关闭菜单",
     "quickLinks": "快速链接",
-    "contactUs": "联系我们"
+    "contactUs": "联系我们",
+    "relatedProducts": "关联产品"
   },
   "hero": {
-    "title": "熵序之间",
+    "title": "TOPFX",
     "mainSlogan": "构建 AI 原生组织,释放百倍生产力",
     "subtitle": "不止 10 倍开发效率,更是 100 倍组织效能",
     "ctaPrimary": "了解 AI 原生组织",
@@ -201,9 +203,9 @@
   },
   "about": {
     "hero": {
-      "title": "熵序之间",
+      "title": "TOPFX",
       "subtitle": "构建 AI 原生组织,释放百倍生产力",
-      "description": "熵序之间 (Entroder) 是一家专注于 AI 原生组织建设和 AI 编程培训的企业培训公司。我们致力于帮助组织和个人通过 AI 技术实现效率的质的飞跃,不仅提升开发效率,更重要的是提升整个组织的运营效率。"
+      "description": "TOPFX PTE. LTD. 是一家专注于 AI 原生组织建设和 AI 编程培训的企业培训公司。我们致力于帮助组织和个人通过 AI 技术实现效率的质的飞跃,不仅提升开发效率,更重要的是提升整个组织的运营效率。"
     },
     "mission": {
       "title": "使命与愿景",
@@ -225,6 +227,16 @@
       "resultOriented": {
         "title": "效果导向",
         "description": "追求可衡量的效率提升"
+      }
+    },
+    "products": {
+      "title": "我们的其他产品",
+      "subtitle": "TOPFX 旗下的关联产品",
+      "nexrouter": {
+        "name": "NexRouter",
+        "tag": "AI 模型中转",
+        "description": "统一接入多家 AI 模型的中转网关,为企业和开发者提供稳定、高性价比的 API 服务。",
+        "cta": "访问 NexRouter"
       }
     },
     "cta": {

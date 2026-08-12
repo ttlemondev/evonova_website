@@ -1,6 +1,7 @@
 {
   "site": {
-    "name": "TopFX",
+    "name": "TOPFX",
+    "fullName": "TOPFX PTE. LTD.",
     "englishName": "",
     "slogan": "Empowering Everyone to Master AI",
     "description": "Professional training institution focused on AI-native organizational transformation and personal AI capability enhancement"
@@ -14,10 +15,11 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "quickLinks": "Quick Links",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "relatedProducts": "Related Products"
   },
   "hero": {
-    "title": "TopFX",
+    "title": "TOPFX",
     "mainSlogan": "Build AI-Native Organizations, Unlock 100x Productivity",
     "subtitle": "Beyond 10x Development Efficiency, Achieve 100x Organizational Effectiveness",
     "ctaPrimary": "Learn About AI-Native Organizations",
@@ -201,9 +203,9 @@
   },
   "about": {
     "hero": {
-      "title": "TopFX",
+      "title": "TOPFX",
       "subtitle": "Build AI-Native Organizations, Unlock 100x Productivity",
-      "description": "TopFX is a company focused on AI-native organizational development and AI coding training. We are committed to helping organizations and individuals achieve quantum leaps in efficiency through AI technology, not only improving development efficiency but more importantly enhancing overall organizational operational efficiency."
+      "description": "TOPFX PTE. LTD. is a company focused on AI-native organizational development and AI coding training. We are committed to helping organizations and individuals achieve quantum leaps in efficiency through AI technology, not only improving development efficiency but more importantly enhancing overall organizational operational efficiency."
     },
     "mission": {
       "title": "Mission and Vision",
@@ -225,6 +227,16 @@
       "resultOriented": {
         "title": "Result-Oriented",
         "description": "Pursue measurable efficiency improvements"
+      }
+    },
+    "products": {
+      "title": "Our Other Products",
+      "subtitle": "Related products by TOPFX",
+      "nexrouter": {
+        "name": "NexRouter",
+        "tag": "AI Model Gateway",
+        "description": "A unified gateway routing across multiple AI model providers, delivering stable and cost-effective API services for enterprises and developers.",
+        "cta": "Visit NexRouter"
       }
     },
     "cta": {

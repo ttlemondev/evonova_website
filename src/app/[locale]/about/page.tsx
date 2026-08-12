@@ -9,13 +9,13 @@ export default function AboutPage() {
   const t = useTranslations();
 
   return (
-    <>TopFX
+    <>
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-24">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-display-lg mb-6">
             {t('about.hero.title')}
-          </h1>TopFX
+          </h1>
           <p className="text-subhead mb-8">
             {t('about.hero.subtitle')}
           </p>
@@ -78,6 +78,42 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Related Products Section */}
+      <section className="container mx-auto px-6 py-12">
+        <ColorBlock variant="mint">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-headline mb-3">{t('about.products.title')}</h2>
+            <p className="text-body-lg mb-8 opacity-80">
+              {t('about.products.subtitle')}
+            </p>
+
+            <div className="bg-white/60 rounded-2xl p-8">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-card-title">{t('about.products.nexrouter.name')}</h3>
+                    <span className="text-body-sm px-3 py-1 rounded-full bg-black/10">
+                      {t('about.products.nexrouter.tag')}
+                    </span>
+                  </div>
+                  <p className="text-body">
+                    {t('about.products.nexrouter.description')}
+                  </p>
+                </div>
+                <a
+                  href="https://nexrouter.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0"
+                >
+                  <Button variant="primary">{t('about.products.nexrouter.cta')}</Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </ColorBlock>
       </section>
 
       {/* CTA Section */}
