@@ -8,6 +8,8 @@
   },
   "nav": {
     "home": "首页",
+    "xWorker": "X Worker",
+    "services": "服务方案",
     "courses": "课程体系",
     "about": "关于我们",
     "contact": "联系我们",
@@ -70,6 +72,30 @@
       "cta": "查看课程"
     }
   },
+  "xWorkerHome": {
+    "eyebrow": "ENTERPRISE AI WORK PLATFORM",
+    "title": "一支真正能协作的数字员工团队",
+    "description": "Leader 拆解任务，多位专业数字员工并行执行、交叉校验并汇总结果。",
+    "mockupAlt": "X Worker 多数字员工协作工作区界面",
+    "capabilities": {
+      "team": {
+        "title": "数字员工团队",
+        "description": "由 Leader 拆解复杂任务，多个专业 Member 并行执行、复核并汇总结果。"
+      },
+      "knowledge": {
+        "title": "企业知识与技能",
+        "description": "沉淀制度、案例、SOP 与优秀员工经验，让个人能力成为组织资产。"
+      },
+      "workflow": {
+        "title": "业务工作流与运营",
+        "description": "接入企业系统，管理权限与流程，持续衡量任务效果、成本和 Token 使用。"
+      }
+    },
+    "workflowLabel": "一个真实业务任务如何运行",
+    "workflow": "任务拆解 → 并行执行 → 交叉校验 → 结果汇总 → 人工确认",
+    "value": "不是为了消耗更多 Token，而是让每一次 Token 调用都参与真实业务流程，并产生可衡量的结果。",
+    "cta": "了解 X Worker"
+  },
   "services": {
     "title": "体系化赋能与实战陪跑",
     "subtitle": "一手保住下限,一手拔高上限",
@@ -96,6 +122,42 @@
       "delivery": "交付形态:",
       "deliveryDetail": "持续陪跑服务,通常 8 周起",
       "value": "AI 编程辅导解决实战中的不确定性难题,沉淀团队独家经验"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "从 AI 场景诊断到持续运营",
+      "subtitle": "用方法、平台与陪跑，把 AI 真正带入企业业务流程"
+    },
+    "stages": {
+      "diagnosis": {
+        "eyebrow": "STAGE 01",
+        "title": "场景诊断与流程设计",
+        "description": "从业务价值和落地可行性出发，选择值得优先投入的 AI 场景。",
+        "features": ["梳理业务流程、数据与岗位职责", "识别高价值、高频和可复制任务", "定义准确率、时效、成本与验收指标"],
+        "delivery": "交付：场景清单、流程蓝图与 PoC 方案"
+      },
+      "implementation": {
+        "eyebrow": "STAGE 02",
+        "title": "X Worker 搭建与部署",
+        "description": "把企业知识、技能和流程配置为能够协作执行的数字员工团队。",
+        "features": ["搭建数字员工角色与协作关系", "配置知识库、技能、工作流和权限", "支持 SaaS、私有化与混合部署"],
+        "delivery": "交付：可运行的数字员工场景与部署环境"
+      },
+      "operations": {
+        "eyebrow": "STAGE 03",
+        "title": "培训、陪跑与持续运营",
+        "description": "帮助员工建立人与数字员工的协作习惯，并持续优化业务结果。",
+        "features": ["系统化培训与日常陪跑", "知识、规则和流程持续更新", "效果评估、Token 分析与场景扩展"],
+        "delivery": "交付：运营复盘、优化建议与可复用场景模板"
+      }
+    },
+    "whyTitle": "为什么三个阶段缺一不可",
+    "whyItems": ["没有场景诊断，AI 容易停留在工具试用", "没有平台实施，知识和流程无法形成组织资产", "没有培训运营，数字员工无法持续适应真实业务"],
+    "cta": {
+      "title": "从一个高价值场景开始",
+      "description": "预约场景诊断，确定最适合贵组织的首个 X Worker 落地任务。",
+      "button": "预约场景诊断"
     }
   },
   "courses": {
@@ -205,7 +267,7 @@
     "hero": {
       "title": "TOPFX",
       "subtitle": "构建 AI 原生组织,释放百倍生产力",
-      "description": "TOPFX PTE. LTD. 是一家专注于 AI 原生组织建设和 AI 编程培训的企业培训公司。我们致力于帮助组织和个人通过 AI 技术实现效率的质的飞跃,不仅提升开发效率,更重要的是提升整个组织的运营效率。"
+      "description": "TOPFX PTE. LTD. 专注于 AI 原生组织转型、数字员工平台落地与 AI 能力培训。我们通过场景诊断、X Worker 平台实施和持续陪跑，帮助企业把 AI 从个人工具转化为可衡量的组织生产力。"
     },
     "mission": {
       "title": "使命与愿景",
@@ -222,7 +284,7 @@
       },
       "practical": {
         "title": "实战化",
-        "description": "不只是培训,更有持续陪跑"
+        "description": "不只提供工具，更负责场景落地与持续陪跑"
       },
       "resultOriented": {
         "title": "效果导向",
@@ -230,12 +292,18 @@
       }
     },
     "products": {
-      "title": "我们的其他产品",
-      "subtitle": "TOPFX 旗下的关联产品",
+      "title": "我们的产品与能力",
+      "subtitle": "从组织转型方法到数字员工平台与模型基础设施",
+      "xWorker": {
+        "name": "X Worker",
+        "tag": "企业 AI 工作平台",
+        "description": "将企业知识、员工技能和业务流程组织成可协作、可管理的数字员工团队。",
+        "cta": "了解 X Worker"
+      },
       "nexrouter": {
         "name": "NexRouter",
-        "tag": "AI 模型中转",
-        "description": "统一接入多家 AI 模型的中转网关,为企业和开发者提供稳定、高性价比的 API 服务。",
+        "tag": "模型基础设施",
+        "description": "为企业和开发者提供统一、稳定且具有成本效率的多模型 API 接入能力。",
         "cta": "访问 NexRouter"
       }
     },
@@ -243,6 +311,73 @@
       "title": "开始您的 AI 原生组织之旅",
       "description": "联系我们,了解如何通过 AI 技术提升组织效能",
       "button": "联系我们"
+    }
+  },
+  "xWorkerPage": {
+    "mockupAlt": "X Worker 多数字员工围绕同一任务并行协作的产品界面",
+    "hero": {
+      "eyebrow": "X WORKER",
+      "title": "企业 AI 工作平台与数字员工团队",
+      "subtitle": "把企业目标、知识和经验组织成角色、技能、流程与协作机制，让 AI 真正进入业务。",
+      "cta": "预约场景诊断"
+    },
+    "problems": {
+      "title": "企业缺少的不是 AI 工具，而是落地能力",
+      "items": [
+        {"title": "工具没有进入流程", "description": "模型和助手停留在个人试用，无法接入岗位职责与业务系统。"},
+        {"title": "经验难以沉淀", "description": "优秀员工的判断规则和异常处理经验无法复制为组织能力。"},
+        {"title": "建设形成孤岛", "description": "各部门重复搭建知识库和助手，权限、数据和模型口径不统一。"},
+        {"title": "结果无法衡量", "description": "企业看不到任务质量、节省工时、Token 成本和推广价值。"}
+      ]
+    },
+    "operating": {
+      "eyebrow": "HOW IT WORKS",
+      "title": "从一个任务到一支协作团队",
+      "description": "数字员工不是单次问答助手。Leader 负责理解目标和拆解任务，专业 Member 并行执行、交叉校验，最终结果按规则进入人工确认或后续系统。",
+      "steps": ["任务进入", "Leader 拆解", "Member 并行执行", "交叉校验", "结果汇总", "人工确认"]
+    },
+    "capabilities": {
+      "title": "一套面向企业运行的完整能力",
+      "items": [
+        {"title": "数字员工", "description": "定义角色、职责、技能、知识、工具权限和行为边界。"},
+        {"title": "团队协作", "description": "支持 Leader-Member 编排、并行协作、消息传递和共享空间。"},
+        {"title": "知识与技能", "description": "建设企业知识库，并将高绩效员工经验蒸馏为可复用技能。"},
+        {"title": "工作流与场景", "description": "将 SOP 拆成可执行步骤，支持触发、分支、审批和人工接管。"},
+        {"title": "系统集成", "description": "连接模型、Office、企业 IM、业务系统、数据库和内部工具。"},
+        {"title": "安全与运营", "description": "统一管理身份权限、运行日志、审计、效果指标和 Token 成本。"}
+      ]
+    },
+    "scenarios": {
+      "title": "从高价值业务场景开始",
+      "items": [
+        {"title": "法务合同审查", "description": "多角色并行完成条款对比、风险识别、合规检查和审查汇总。"},
+        {"title": "投资研究与尽调", "description": "宏观、行业、尽调和风险数字员工协作形成研究结论。"},
+        {"title": "企业知识助手", "description": "根据员工权限，从制度、流程和历史案例中提供可信答案。"},
+        {"title": "制造业资料处理", "description": "读取技术资料、整理需求、生成文档并按标准流程校验。"}
+      ]
+    },
+    "deployment": {
+      "title": "部署与数据安全",
+      "items": [
+        {"title": "云端部署", "description": "快速开通和弹性扩展，适合早期验证与非敏感场景。"},
+        {"title": "本地私有化", "description": "平台、知识、日志和数据保留在企业内网。"},
+        {"title": "混合部署", "description": "敏感数据本地处理，非敏感任务按策略使用云端模型。"}
+      ]
+    },
+    "implementation": {
+      "title": "从 PoC 到规模化运营",
+      "steps": ["场景诊断", "技能蒸馏", "流程设计", "PoC 验证", "部署与培训", "持续运营"]
+    },
+    "metrics": {
+      "eyebrow": "MEASURABLE OUTCOMES",
+      "title": "让每一次 Token 调用都参与真实业务",
+      "description": "项目不以调用量本身作为成功标准，而是持续衡量 Token 带来的任务质量、效率和业务价值。",
+      "items": ["任务完成率", "准确率与复核率", "节省工时", "Token 使用量", "单任务成本"]
+    },
+    "cta": {
+      "title": "先跑通一个场景，再复制到更多部门",
+      "description": "与 TOPFX 一起选择首个高价值任务，完成诊断、PoC、部署与持续优化。",
+      "button": "预约 X Worker 场景诊断"
     }
   },
   "contact": {
@@ -264,6 +399,16 @@
       "email": "邮箱",
       "company": "公司名称",
       "phone": "电话",
+      "topic": "咨询类型",
+      "topicPlaceholder": "请选择咨询类型",
+      "topics": {
+        "xWorker": "X Worker 场景诊断",
+        "transformation": "AI 原生组织转型",
+        "training": "企业培训",
+        "coaching": "AI 编程辅导"
+      },
+      "scenario": "希望解决的业务场景",
+      "scenarioPlaceholder": "例如：合同审查、投研分析、企业知识问答或业务流程自动化",
       "message": "留言",
       "required": "*",
       "submit": "提交咨询",
@@ -275,6 +420,8 @@
         "emailRequired": "请输入邮箱",
         "emailInvalid": "请输入有效的邮箱地址",
         "companyRequired": "请输入公司名称",
+        "topicRequired": "请选择咨询类型",
+        "scenarioRequired": "请简要描述希望解决的业务场景",
         "messageRequired": "请输入留言内容"
       }
     }

@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { useTranslations } from 'next-intl';
 import ColorBlock from '@/components/ui/ColorBlock';
 import ContactForm from '@/components/contact/ContactForm';
@@ -26,7 +27,9 @@ export default function ContactPage() {
         <ColorBlock variant="lime">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-headline mb-8 text-center">{t('contact.formTitle')}</h2>
-            <ContactForm />
+            <Suspense fallback={null}>
+              <ContactForm />
+            </Suspense>
           </div>
         </ColorBlock>
       </section>

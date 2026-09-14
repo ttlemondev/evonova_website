@@ -8,6 +8,8 @@
   },
   "nav": {
     "home": "Home",
+    "xWorker": "X Worker",
+    "services": "Services",
     "courses": "Courses",
     "about": "About",
     "contact": "Contact",
@@ -70,6 +72,30 @@
       "cta": "View Courses"
     }
   },
+  "xWorkerHome": {
+    "eyebrow": "ENTERPRISE AI WORK PLATFORM",
+    "title": "A digital workforce that truly collaborates",
+    "description": "A Leader decomposes the task while specialist digital workers execute, cross-check, and consolidate in parallel.",
+    "mockupAlt": "X Worker multi-digital-worker collaboration workspace",
+    "capabilities": {
+      "team": {
+        "title": "Digital Worker Teams",
+        "description": "A Leader breaks down complex work while specialist Members execute, review, and consolidate in parallel."
+      },
+      "knowledge": {
+        "title": "Enterprise Knowledge and Skills",
+        "description": "Capture policies, cases, SOPs, and expert judgment so individual expertise becomes an organizational asset."
+      },
+      "workflow": {
+        "title": "Business Workflows and Operations",
+        "description": "Connect enterprise systems, govern permissions and processes, and track outcomes, cost, and token usage."
+      }
+    },
+    "workflowLabel": "How a real business task runs",
+    "workflow": "Task decomposition → Parallel execution → Cross-checking → Consolidation → Human approval",
+    "value": "The goal is not to spend more tokens. It is to make every token call participate in a real business process and produce measurable outcomes.",
+    "cta": "Explore X Worker"
+  },
   "services": {
     "title": "Systematic Empowerment and Practical Coaching",
     "subtitle": "Raise the Floor, Lift the Ceiling",
@@ -96,6 +122,42 @@
       "delivery": "Delivery Format:",
       "deliveryDetail": "Continuous coaching service, typically 8 weeks minimum",
       "value": "AI coding coaching solves uncertainty challenges in practice, accumulates team-specific expertise"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "From AI Opportunity Discovery to Continuous Operations",
+      "subtitle": "Bring AI into real enterprise workflows through methodology, platform implementation, and coaching"
+    },
+    "stages": {
+      "diagnosis": {
+        "eyebrow": "STAGE 01",
+        "title": "Scenario Diagnosis and Process Design",
+        "description": "Prioritize AI opportunities based on business value and implementation feasibility.",
+        "features": ["Map workflows, data, and role responsibilities", "Identify high-value, frequent, repeatable tasks", "Define quality, speed, cost, and acceptance metrics"],
+        "delivery": "Deliverables: scenario portfolio, process blueprint, and PoC plan"
+      },
+      "implementation": {
+        "eyebrow": "STAGE 02",
+        "title": "X Worker Build and Deployment",
+        "description": "Configure enterprise knowledge, skills, and workflows into a collaborative digital workforce.",
+        "features": ["Design digital-worker roles and collaboration", "Configure knowledge, skills, workflows, and permissions", "Support SaaS, private, and hybrid deployment"],
+        "delivery": "Deliverables: working digital-worker scenarios and deployment environment"
+      },
+      "operations": {
+        "eyebrow": "STAGE 03",
+        "title": "Training, Coaching, and Operations",
+        "description": "Help employees build effective human-AI collaboration habits and continuously improve outcomes.",
+        "features": ["Structured training and daily coaching", "Continuous updates to knowledge, rules, and workflows", "Outcome reviews, token analysis, and scenario expansion"],
+        "delivery": "Deliverables: operating reviews, optimization actions, and reusable scenario templates"
+      }
+    },
+    "whyTitle": "Why all three stages matter",
+    "whyItems": ["Without diagnosis, AI remains a collection of tool experiments", "Without implementation, knowledge and processes never become organizational assets", "Without training and operations, digital workers cannot keep pace with real business"],
+    "cta": {
+      "title": "Start with one high-value scenario",
+      "description": "Book a scenario diagnosis to identify the best first X Worker task for your organization.",
+      "button": "Book Scenario Diagnosis"
     }
   },
   "courses": {
@@ -205,7 +267,7 @@
     "hero": {
       "title": "TOPFX",
       "subtitle": "Build AI-Native Organizations, Unlock 100x Productivity",
-      "description": "TOPFX PTE. LTD. is a company focused on AI-native organizational development and AI coding training. We are committed to helping organizations and individuals achieve quantum leaps in efficiency through AI technology, not only improving development efficiency but more importantly enhancing overall organizational operational efficiency."
+      "description": "TOPFX PTE. LTD. focuses on AI-native transformation, digital-workforce implementation, and AI capability training. Through scenario diagnosis, X Worker implementation, and continuous coaching, we help enterprises turn AI from an individual tool into measurable organizational productivity."
     },
     "mission": {
       "title": "Mission and Vision",
@@ -222,7 +284,7 @@
       },
       "practical": {
         "title": "Practical",
-        "description": "Not just training, but continuous coaching"
+        "description": "More than tools: scenario implementation and continuous coaching"
       },
       "resultOriented": {
         "title": "Result-Oriented",
@@ -230,12 +292,18 @@
       }
     },
     "products": {
-      "title": "Our Other Products",
-      "subtitle": "Related products by TOPFX",
+      "title": "Our Products and Capabilities",
+      "subtitle": "From organizational transformation methods to digital workers and model infrastructure",
+      "xWorker": {
+        "name": "X Worker",
+        "tag": "Enterprise AI Work Platform",
+        "description": "Turn enterprise knowledge, employee skills, and business processes into collaborative, manageable digital-worker teams.",
+        "cta": "Explore X Worker"
+      },
       "nexrouter": {
         "name": "NexRouter",
-        "tag": "AI Model Gateway",
-        "description": "A unified gateway routing across multiple AI model providers, delivering stable and cost-effective API services for enterprises and developers.",
+        "tag": "Model Infrastructure",
+        "description": "Unified, reliable, and cost-efficient multi-model API access for enterprises and developers.",
         "cta": "Visit NexRouter"
       }
     },
@@ -243,6 +311,73 @@
       "title": "Ready to Start Your AI-Native Organization Journey?",
       "description": "Contact us to learn how to enhance organizational effectiveness through AI technology",
       "button": "Contact Us"
+    }
+  },
+  "xWorkerPage": {
+    "mockupAlt": "X Worker product interface showing multiple digital workers collaborating on one task",
+    "hero": {
+      "eyebrow": "X WORKER",
+      "title": "Enterprise AI Work Platform and Digital Workforce",
+      "subtitle": "Organize enterprise goals, knowledge, and expertise into roles, skills, workflows, and collaboration that bring AI into real operations.",
+      "cta": "Book Scenario Diagnosis"
+    },
+    "problems": {
+      "title": "Enterprises do not lack AI tools. They lack implementation capability.",
+      "items": [
+        {"title": "Tools stay outside workflows", "description": "Models and assistants remain personal experiments instead of connecting to roles and systems."},
+        {"title": "Expertise is hard to retain", "description": "Expert judgment and exception handling cannot be replicated as organizational capability."},
+        {"title": "Teams create new silos", "description": "Departments duplicate assistants and knowledge bases with inconsistent permissions, data, and models."},
+        {"title": "Outcomes are hard to measure", "description": "Leaders cannot see task quality, time saved, token cost, or the value of scaling."}
+      ]
+    },
+    "operating": {
+      "eyebrow": "HOW IT WORKS",
+      "title": "From one task to a collaborative workforce",
+      "description": "Digital workers are more than chat assistants. A Leader interprets goals and decomposes work, specialist Members execute and cross-check in parallel, and results follow defined rules into human approval or downstream systems.",
+      "steps": ["Task intake", "Leader decomposition", "Parallel execution", "Cross-checking", "Consolidation", "Human approval"]
+    },
+    "capabilities": {
+      "title": "A complete operating foundation for enterprises",
+      "items": [
+        {"title": "Digital Workers", "description": "Define roles, responsibilities, skills, knowledge, tool permissions, and behavioral boundaries."},
+        {"title": "Team Collaboration", "description": "Support Leader-Member orchestration, parallel work, messaging, and shared workspaces."},
+        {"title": "Knowledge and Skills", "description": "Build enterprise knowledge bases and distill expert practice into reusable skills."},
+        {"title": "Workflows and Scenarios", "description": "Break SOPs into executable steps with triggers, branches, approvals, and human handoffs."},
+        {"title": "System Integration", "description": "Connect models, Office, enterprise messaging, business systems, databases, and internal tools."},
+        {"title": "Security and Operations", "description": "Govern identity, permissions, logs, audits, outcome metrics, and token costs."}
+      ]
+    },
+    "scenarios": {
+      "title": "Start with high-value business scenarios",
+      "items": [
+        {"title": "Legal Contract Review", "description": "Multiple roles compare clauses, identify risks, check compliance, and consolidate findings."},
+        {"title": "Investment Research and Due Diligence", "description": "Macro, industry, diligence, and risk workers collaborate on research conclusions."},
+        {"title": "Enterprise Knowledge Assistant", "description": "Answer from policies, processes, and cases according to each employee's permissions."},
+        {"title": "Manufacturing Document Operations", "description": "Read technical materials, structure requirements, generate documents, and validate against standards."}
+      ]
+    },
+    "deployment": {
+      "title": "Deployment and Data Security",
+      "items": [
+        {"title": "Cloud", "description": "Fast provisioning and elastic scale for early validation and non-sensitive scenarios."},
+        {"title": "Private Deployment", "description": "Keep the platform, knowledge, logs, and enterprise data inside the corporate network."},
+        {"title": "Hybrid", "description": "Process sensitive data locally while routing approved tasks to cloud models."}
+      ]
+    },
+    "implementation": {
+      "title": "From PoC to scaled operations",
+      "steps": ["Scenario diagnosis", "Skill distillation", "Process design", "PoC validation", "Deployment and training", "Continuous operations"]
+    },
+    "metrics": {
+      "eyebrow": "MEASURABLE OUTCOMES",
+      "title": "Make every token call contribute to real work",
+      "description": "Success is not measured by volume alone. We continuously connect token usage to task quality, efficiency, and business value.",
+      "items": ["Task completion rate", "Accuracy and review rate", "Hours saved", "Token usage", "Cost per task"]
+    },
+    "cta": {
+      "title": "Prove one scenario, then scale across departments",
+      "description": "Work with TOPFX to select a first high-value task and complete diagnosis, PoC, deployment, and continuous optimization.",
+      "button": "Book X Worker Scenario Diagnosis"
     }
   },
   "contact": {
@@ -264,6 +399,16 @@
       "email": "Email",
       "company": "Company Name",
       "phone": "Phone",
+      "topic": "Consultation Type",
+      "topicPlaceholder": "Select a consultation type",
+      "topics": {
+        "xWorker": "X Worker Scenario Diagnosis",
+        "transformation": "AI-Native Organization Transformation",
+        "training": "Enterprise Training",
+        "coaching": "AI Coding Coaching"
+      },
+      "scenario": "Business Scenario to Address",
+      "scenarioPlaceholder": "For example: contract review, investment research, enterprise knowledge, or workflow automation",
       "message": "Message",
       "required": "*",
       "submit": "Submit Inquiry",
@@ -275,6 +420,8 @@
         "emailRequired": "Please enter email",
         "emailInvalid": "Please enter a valid email address",
         "companyRequired": "Please enter company name",
+        "topicRequired": "Please select a consultation type",
+        "scenarioRequired": "Please briefly describe the business scenario",
         "messageRequired": "Please enter message content"
       }
     }

@@ -1,12 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 import ColorBlock from '@/components/ui/ColorBlock';
 
 export default function AboutPage() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <>
@@ -89,27 +90,41 @@ export default function AboutPage() {
               {t('about.products.subtitle')}
             </p>
 
-            <div className="bg-white/60 rounded-2xl p-8">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-3">
-                    <h3 className="text-card-title">{t('about.products.nexrouter.name')}</h3>
-                    <span className="text-body-sm px-3 py-1 rounded-full bg-black/10">
-                      {t('about.products.nexrouter.tag')}
-                    </span>
+            <div className="grid gap-6">
+              <div className="bg-white/60 rounded-2xl p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-center gap-3 mb-3">
+                      <h3 className="text-card-title">{t('about.products.xWorker.name')}</h3>
+                      <span className="text-body-sm px-3 py-1 rounded-full bg-black/10">
+                        {t('about.products.xWorker.tag')}
+                      </span>
+                    </div>
+                    <p className="text-body">{t('about.products.xWorker.description')}</p>
                   </div>
-                  <p className="text-body">
-                    {t('about.products.nexrouter.description')}
-                  </p>
+                  <Button asChild variant="primary" className="shrink-0">
+                    <Link href={`/${locale}/x-worker`}>{t('about.products.xWorker.cta')}</Link>
+                  </Button>
                 </div>
-                <a
-                  href="https://nexrouter.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shrink-0"
-                >
-                  <Button variant="primary">{t('about.products.nexrouter.cta')}</Button>
-                </a>
+              </div>
+
+              <div className="bg-white/40 rounded-2xl p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-center gap-3 mb-3">
+                      <h3 className="text-card-title">{t('about.products.nexrouter.name')}</h3>
+                      <span className="text-body-sm px-3 py-1 rounded-full bg-black/10">
+                        {t('about.products.nexrouter.tag')}
+                      </span>
+                    </div>
+                    <p className="text-body">{t('about.products.nexrouter.description')}</p>
+                  </div>
+                  <Button asChild variant="secondary" className="shrink-0">
+                    <a href="https://nexrouter.ai" target="_blank" rel="noopener noreferrer">
+                      {t('about.products.nexrouter.cta')}
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -123,7 +138,7 @@ export default function AboutPage() {
           <p className="text-body-lg mb-8">
             {t('about.cta.description')}
           </p>
-          <Link href="/contact">
+          <Link href={`/${locale}/contact`}>
             <Button variant="primary">{t('about.cta.button')}</Button>
           </Link>
         </div>

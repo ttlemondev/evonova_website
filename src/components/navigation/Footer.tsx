@@ -13,9 +13,11 @@ const Footer = () => {
 
   const navLinks = [
     { label: t('home'), href: `/${locale}#hero` },
+    { label: t('xWorker'), href: `/${locale}/x-worker` },
+    { label: t('services'), href: `/${locale}/services` },
     { label: t('courses'), href: `/${locale}#courses` },
-    { label: t('about'), href: `/${locale}#about` },
-    { label: t('contact'), href: `/${locale}#contact` },
+    { label: t('about'), href: `/${locale}/about` },
+    { label: t('contact'), href: `/${locale}/contact` },
   ];
 
   // Contact info - hardcoded as it's not in translations
@@ -33,7 +35,7 @@ const Footer = () => {
   return (
     <footer className="bg-inverse-canvas text-inverse-ink">
       <div className="max-w-[1440px] mx-auto px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-12 mb-12">
           <div>
             <h3 className="text-headline mb-4">
               {tSite('name')}
@@ -71,20 +73,6 @@ const Footer = () => {
                 {contactInfo.email}
               </a>
               <p>{contactInfo.phone}</p>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-body-lg font-[540] mb-4">{t('relatedProducts')}</h4>
-            <div className="flex flex-col gap-3 text-body-sm opacity-80">
-              <a
-                href="https://nexrouter.ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-100 transition-opacity duration-200"
-              >
-                NexRouter
-              </a>
             </div>
           </div>
         </div>

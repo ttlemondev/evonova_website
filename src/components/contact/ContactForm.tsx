@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -12,11 +13,14 @@ type ContactFormData = {
   email: string;
   company: string;
   phone?: string;
+  topic: string;
+  scenario: string;
   message: string;
 };
 
 export default function ContactForm() {
   const t = useTranslations('contact.form');
+  const searchParams = useSearchParams();
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState<string>('');
 
@@ -25,6 +29,8 @@ export default function ContactForm() {
     email: z.string().min(1, t('validation.emailRequired')).email(t('validation.emailInvalid')),
     company: z.string().min(1, t('validation.companyRequired')),
     phone: z.string().optional(),
+    topic: z.string().min(1, t('validation.topicRequired')),
+    scenario: z.string().min(1, t('validation.scenarioRequired')),
     message: z.string().min(1, t('validation.messageRequired')),
   }), [t]);
 
@@ -35,6 +41,9 @@ export default function ContactForm() {
     reset,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      topic: searchParams.get('topic') === 'xWorker' ? 'xWorker' : '',
+    },
   });
 
   const onSubmit = async (data: ContactFormData) => {
@@ -53,7 +62,7 @@ export default function ContactForm() {
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setErrorMessage(t('errorMessage'));
     }
@@ -114,6 +123,38 @@ export default function ContactForm() {
           className="w-full border border-hairline rounded-[var(--radius-md)] p-[var(--spacing-md)] text-body focus:outline-none focus:ring-2 focus:ring-primary"
         />
         {errors.phone && <p className="mt-1 text-sm text-red-500">{errors.phone.message}</p>}
+      </div>
+
+      <div className="mb-6">
+        <label htmlFor="topic" className="block text-body-sm font-medium text-ink mb-2">
+          {t('topic')} <span className="text-red-500">{t('required')}</span>
+        </label>
+        <select
+          id="topic"
+          {...register('topic')}
+          className="w-full border border-hairline rounded-[var(--radius-md)] p-[var(--spacing-md)] text-body bg-canvas focus:outline-none focus:ring-2 focus:ring-primary"
+        >
+          <option value="">{t('topicPlaceholder')}</option>
+          <option value="xWorker">{t('topics.xWorker')}</option>
+          <option value="transformation">{t('topics.transformation')}</option>
+          <option value="training">{t('topics.training')}</option>
+          <option value="coaching">{t('topics.coaching')}</option>
+        </select>
+        {errors.topic && <p className="mt-1 text-sm text-red-500">{errors.topic.message}</p>}
+      </div>
+
+      <div className="mb-6">
+        <label htmlFor="scenario" className="block text-body-sm font-medium text-ink mb-2">
+          {t('scenario')} <span className="text-red-500">{t('required')}</span>
+        </label>
+        <textarea
+          id="scenario"
+          rows={4}
+          placeholder={t('scenarioPlaceholder')}
+          {...register('scenario')}
+          className="w-full border border-hairline rounded-[var(--radius-md)] p-[var(--spacing-md)] text-body focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+        />
+        {errors.scenario && <p className="mt-1 text-sm text-red-500">{errors.scenario.message}</p>}
       </div>
 
       <div className="mb-6">
