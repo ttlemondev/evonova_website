@@ -153,6 +153,10 @@
   .space-y-section > :not(:last-child) { margin-bottom: var(--spacing-section); }
 
 /* Base Styles */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
 *,
 *::before,
 *::after {
@@ -401,3 +405,5 @@ body {
 .bg-gradient-radial {
   background: radial-gradient(circle at center, var(--tw-gradient-stops));
 }
+
+/* Anchor motion follows the visitor's system preference. */
