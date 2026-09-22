@@ -36,7 +36,7 @@ assert.equal((html.match(/<body(?:\s|>)/g) || []).length, 1, 'One root body elem
 for (const text of ['Intelligence,', 'made everyday.', 'PokeVid', 'iPulse', 'mailto:contact@topfx.top', 'tel:+658287709']) {
   assert.ok(html.includes(text), `Missing ${text}`);
 }
-for (const id of ['products', 'pokevid', 'ipulse', 'approach', 'company', 'contact']) {
-  assert.ok(html.includes(`id="${id}"`), `Missing section ${id}`);
+for (const id of ['hero', 'products', 'pokevid', 'ipulse', 'approach', 'courses', 'solutions', 'company', 'contact']) {
+  assert.equal((html.match(new RegExp(`id="${id}"`, 'g')) || []).length, 1, `Expected one section or legacy anchor: ${id}`);
 }
 console.log('PASS English page, document structure, section targets and preserved contact links');

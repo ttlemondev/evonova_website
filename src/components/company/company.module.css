@@ -60,6 +60,8 @@
 .products { padding-top: 130px; padding-bottom: 118px; }
 .site .products, .site .company { scroll-margin-top: -20px; }
 .site .approach { scroll-margin-top: 20px; }
+.approach { position: relative; }
+.legacyAnchor { position: absolute; top: 0; left: 0; width: 1px; height: 1px; pointer-events: none; scroll-margin-top: 20px; }
 .sectionHeading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 45px; }
 .sectionHeading h2 { font-weight: 450; letter-spacing: -.05em; line-height: 1.16; font-size: clamp(34px, 3.5vw, 50px); }
 .sectionHeading > p { font-size: 14px; line-height: 1.8; color: var(--muted); padding-bottom: 5px; }
@@ -272,6 +274,7 @@
   .heroFoot > div { gap: 9px; font-size: 7px; letter-spacing: .2px; }
   .products { padding-top: 78px; padding-bottom: 72px; }
   .site .products, .site .company, .site .approach { scroll-margin-top: 15px; }
+  .legacyAnchor { scroll-margin-top: 15px; }
   .sectionHeading { display: block; margin-bottom: 28px; }
   .sectionHeading h2 { font-size: 32px; letter-spacing: -.045em; }
   .sectionHeading > p { margin-top: 20px; font-size: 12px; }
