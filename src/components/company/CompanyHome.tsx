@@ -72,7 +72,6 @@ export default function CompanyHome() {
 
       <section id="approach" className={styles.approach} aria-labelledby="approach-heading">
         {/* Retain published bookmarks without adding visible training-site navigation. */}
-        <span id="courses" className={styles.legacyAnchor} aria-hidden="true" />
         <span id="solutions" className={styles.legacyAnchor} aria-hidden="true" />
         <div className={styles.container}>
           <div className={styles.sectionHeading} data-reveal><div><h2 id="approach-heading">Serious engineering.<br /><span>Simple experiences.</span></h2></div><p>We bring AI, mobile engineering and product design together around a clear purpose.</p></div>
