@@ -12,12 +12,10 @@ export const company = {
 export const products = {
   pokevid: {
     name: 'PokeVid',
-    store: 'https://play.google.com/store/apps/details?id=com.poke.ai.video.gen&hl=en',
     icon: '/images/products/pokevid-icon.webp',
   },
   ipulse: {
     name: 'iPulse',
-    store: 'https://apps.apple.com/tw/app/ipulse-heart-rate/id6755516849?l=en-GB',
     icon: '/images/products/ipulse-icon.webp',
   },
 } as const;

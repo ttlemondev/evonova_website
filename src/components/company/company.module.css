@@ -106,9 +106,6 @@
 .productInfo > p { font-size: 13px; line-height: 1.85; color: var(--muted); max-width: 475px; }
 .featureTags { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 22px 0 28px; list-style: none; }
 .featureTags li { padding: 5px 10px; border: 1px solid var(--line); border-radius: 5px; font-size: 10px; color: #636975; }
-.storeLink { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 500; padding-bottom: 9px; border-bottom: 1px solid #6a7482; transition: color .2s; }
-.storeLink > svg:last-of-type { margin-left: 16px; width: 17px; }
-.storeLink:hover { color: var(--blue); border-color: var(--blue); }
 .productInfo p.healthNote { max-width: 400px; font-size: 10px; line-height: 1.6; color: #717784; margin-top: 18px; }
 .approach { background: #111d32; color: #f4f6fc; padding: 90px 0 30px; }
 .approach .sectionHeading h2 span { color: #92a0b7; }
@@ -334,11 +331,11 @@
 
 .backToTop { display: inline-flex; align-items: center; gap: 8px; }
 @media (prefers-reduced-motion: no-preference) and (hover: hover) {
-  .backToTop span, .storeLink > svg:last-of-type, .textLink svg, .capabilityProduct svg, .contactDetails svg {
+  .backToTop span, .textLink svg, .capabilityProduct svg, .contactDetails svg {
     transition: transform .3s cubic-bezier(.22, 1, .36, 1);
   }
   .backToTop:hover span { transform: translateY(-3px); }
-  .storeLink:hover > svg:last-of-type, .textLink:hover svg, .contactDetails a:hover svg { transform: translate(2px, -2px); }
+  .textLink:hover svg, .contactDetails a:hover svg { transform: translate(2px, -2px); }
   .capabilityProduct:hover svg { transform: translateX(4px); }
 }
 
