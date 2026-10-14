@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 import { useTranslations } from 'next-intl';
 import ColorBlock from '@/components/ui/ColorBlock';
 import ContactForm from '@/components/contact/ContactForm';
+import { company } from '@/components/company/company-data';
 
 export default function ContactPage() {
   const t = useTranslations();
@@ -40,17 +41,17 @@ export default function ContactPage() {
           <h2 className="text-headline mb-12 text-center">{t('contact.info.title')}</h2>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <div>
+            {company.email && <div>
               <h3 className="text-card-title mb-4">{t('contact.info.email')}</h3>
               <p className="text-body mb-2">
-                <a href="mailto:contact@topfx.top" className="text-primary hover:underline">
-                  contact@topfx.top
+                <a href={`mailto:${company.email}`} className="text-primary hover:underline">
+                  {company.email}
                 </a>
               </p>
               <p className="text-body-sm text-gray-600">
                 {t('contact.info.emailResponse')}
               </p>
-            </div>
+            </div>}
 
             <div>
               <h3 className="text-card-title mb-4">{t('contact.info.wechat')}</h3>

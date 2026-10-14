@@ -3,7 +3,7 @@ export function Arrow({ diagonal = false, className = '' }: { diagonal?: boolean
 }
 
 export function BrandMark({ className = '' }: { className?: string }) {
-  return <svg className={className} width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M3 5h26v6H19v18h-6V11H3z" fill="currentColor" /><path d="M3 16h6v13H3zM23 16h6v13h-6z" fill="currentColor" opacity=".4" /></svg>;
+  return <svg className={className} width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 5h23v6H10v10h17v6H4z" fill="currentColor" /><path d="M14 13h10v6H14z" fill="currentColor" opacity=".4" /></svg>;
 }
 
 export function PlayStore() {

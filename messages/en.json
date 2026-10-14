@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "TOPFX",
-    "fullName": "TOPFX PTE. LTD.",
+    "name": "EVONOVA",
+    "fullName": "EVONOVA LIMITED",
     "englishName": "",
     "slogan": "Empowering Everyone to Master AI",
     "description": "Professional training institution focused on AI-native organizational transformation and personal AI capability enhancement"
@@ -21,7 +21,7 @@
     "relatedProducts": "Related Products"
   },
   "hero": {
-    "title": "TOPFX",
+    "title": "EVONOVA",
     "mainSlogan": "Build AI-Native Organizations, Unlock 100x Productivity",
     "subtitle": "Beyond 10x Development Efficiency, Achieve 100x Organizational Effectiveness",
     "ctaPrimary": "Learn About AI-Native Organizations",
@@ -265,9 +265,9 @@
   },
   "about": {
     "hero": {
-      "title": "TOPFX",
+      "title": "EVONOVA",
       "subtitle": "Build AI-Native Organizations, Unlock 100x Productivity",
-      "description": "TOPFX PTE. LTD. focuses on AI-native transformation, digital-workforce implementation, and AI capability training. Through scenario diagnosis, X Worker implementation, and continuous coaching, we help enterprises turn AI from an individual tool into measurable organizational productivity."
+      "description": "EVONOVA LIMITED focuses on AI-native transformation, digital-workforce implementation, and AI capability training. Through scenario diagnosis, X Worker implementation, and continuous coaching, we help enterprises turn AI from an individual tool into measurable organizational productivity."
     },
     "mission": {
       "title": "Mission and Vision",
@@ -376,7 +376,7 @@
     },
     "cta": {
       "title": "Prove one scenario, then scale across departments",
-      "description": "Work with TOPFX to select a first high-value task and complete diagnosis, PoC, deployment, and continuous optimization.",
+      "description": "Work with EVONOVA to select a first high-value task and complete diagnosis, PoC, deployment, and continuous optimization.",
       "button": "Book X Worker Scenario Diagnosis"
     }
   },

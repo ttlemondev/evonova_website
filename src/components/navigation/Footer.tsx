@@ -3,6 +3,7 @@
 import React from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants';
 
 const Footer = () => {
   const t = useTranslations('nav');
@@ -20,17 +21,8 @@ const Footer = () => {
     { label: t('contact'), href: `/${locale}/contact` },
   ];
 
-  // Contact info - hardcoded as it's not in translations
-  const contactInfo = {
-    email: 'contact@topfx.top',
-    phone: '+65 8287709',
-  };
-
-  const socialLinks = {
-    github: 'https://github.com/topfx',
-    twitter: 'https://twitter.com/topfx',
-    linkedin: 'https://linkedin.com/company/topfx',
-  };
+  const contactInfo = SITE_CONFIG.contact;
+  const socialLinks = SITE_CONFIG.social;
 
   return (
     <footer className="bg-inverse-canvas text-inverse-ink">
@@ -63,18 +55,18 @@ const Footer = () => {
             </nav>
           </div>
 
-          <div>
+          {(contactInfo.email || contactInfo.phone) && <div>
             <h4 className="text-body-lg font-[540] mb-4">{t('contactUs')}</h4>
             <div className="flex flex-col gap-3 text-body-sm opacity-80">
-              <a
+              {contactInfo.email && <a
                 href={`mailto:${contactInfo.email}`}
                 className="hover:opacity-100 transition-opacity duration-200"
               >
                 {contactInfo.email}
-              </a>
-              <p>{contactInfo.phone}</p>
+              </a>}
+              {contactInfo.phone && <p>{contactInfo.phone}</p>}
             </div>
-          </div>
+          </div>}
         </div>
 
         <div className="border-t border-on-inverse-soft/20 mb-8" />

@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "TOPFX",
-    "fullName": "TOPFX PTE. LTD.",
+    "name": "EVONOVA",
+    "fullName": "EVONOVA LIMITED",
     "englishName": "",
     "slogan": "让每个人都能驾驭 AI",
     "description": "专注于 AI 原生组织转型与个人 AI 能力提升的专业培训机构"
@@ -21,7 +21,7 @@
     "relatedProducts": "关联产品"
   },
   "hero": {
-    "title": "TOPFX",
+    "title": "EVONOVA",
     "mainSlogan": "构建 AI 原生组织,释放百倍生产力",
     "subtitle": "不止 10 倍开发效率,更是 100 倍组织效能",
     "ctaPrimary": "了解 AI 原生组织",
@@ -265,9 +265,9 @@
   },
   "about": {
     "hero": {
-      "title": "TOPFX",
+      "title": "EVONOVA",
       "subtitle": "构建 AI 原生组织,释放百倍生产力",
-      "description": "TOPFX PTE. LTD. 专注于 AI 原生组织转型、数字员工平台落地与 AI 能力培训。我们通过场景诊断、X Worker 平台实施和持续陪跑，帮助企业把 AI 从个人工具转化为可衡量的组织生产力。"
+      "description": "EVONOVA LIMITED 专注于 AI 原生组织转型、数字员工平台落地与 AI 能力培训。我们通过场景诊断、X Worker 平台实施和持续陪跑，帮助企业把 AI 从个人工具转化为可衡量的组织生产力。"
     },
     "mission": {
       "title": "使命与愿景",
@@ -376,7 +376,7 @@
     },
     "cta": {
       "title": "先跑通一个场景，再复制到更多部门",
-      "description": "与 TOPFX 一起选择首个高价值任务，完成诊断、PoC、部署与持续优化。",
+      "description": "与 EVONOVA 一起选择首个高价值任务，完成诊断、PoC、部署与持续优化。",
       "button": "预约 X Worker 场景诊断"
     }
   },

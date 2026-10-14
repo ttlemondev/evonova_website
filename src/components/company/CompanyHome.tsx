@@ -28,7 +28,7 @@ export default function CompanyHome() {
             <a href="#pokevid"><Image src={products.pokevid.icon} alt="" width={40} height={40} /><span>PokeVid<small>Imagine. Create.</small></span><Arrow diagonal /></a>
             <a href="#ipulse"><Image src={products.ipulse.icon} alt="" width={40} height={40} /><span>iPulse<small>Pause. Tune in.</small></span><Arrow diagonal /></a>
           </div>
-          <div className={styles.canvasIndex} aria-hidden="true">TOPFX / APPLIED INTELLIGENCE</div>
+          <div className={styles.canvasIndex} aria-hidden="true">EVONOVA / APPLIED INTELLIGENCE</div>
         </div>
         <div className={styles.heroFoot}><span>From emerging technology to everyday experiences.</span><div><span>APPLIED AI</span><i /><span>PRODUCT DESIGN</span><i /><span>MOBILE ENGINEERING</span></div></div>
       </section>
@@ -81,17 +81,17 @@ export default function CompanyHome() {
       </section>
 
       <section id="company" className={`${styles.container} ${styles.company}`} aria-labelledby="company-heading">
-        <div className={styles.companyIntro}><span className={styles.companyLocation}><span className={styles.statusDot} />BASED IN SINGAPORE.<br />BUILDING FOR EVERYDAY LIFE.</span></div>
-        <div className={styles.companyStory} data-reveal><h2 id="company-heading">Technology moves fast.<br />We make it <span>mean something.</span></h2><div className={styles.companyColumns}><p>We are TOPFX, an AI company building apps around real human needs. We bring product thinking, design and engineering together to make new technology useful beyond the demo.</p><p>From creative expression to personal wellbeing, our products explore a shared idea: powerful technology should feel like a natural part of your day.</p></div><a href="#contact" className={styles.textLink}>Get to know us<Arrow diagonal /></a></div>
+        <div className={styles.companyIntro}><span className={styles.companyLocation}><span className={styles.statusDot} />BASED IN HONG KONG.<br />BUILDING FOR EVERYDAY LIFE.</span></div>
+        <div className={styles.companyStory} data-reveal><h2 id="company-heading">Technology moves fast.<br />We make it <span>mean something.</span></h2><div className={styles.companyColumns}><p>We are {company.legalName}, a Hong Kong AI company building apps around real human needs. We bring product thinking, design and engineering together to make new technology useful beyond the demo.</p><p>From creative expression to personal wellbeing, our products explore a shared idea: powerful technology should feel like a natural part of your day.</p></div><a href="#contact" className={styles.textLink}>Get to know us<Arrow diagonal /></a></div>
       </section>
 
       <section id="contact" className={`${styles.container} ${styles.contact}`} aria-labelledby="contact-heading">
-        <div className={styles.contactTop}><span>GOOD THINGS START WITH A CONVERSATION.</span></div>
-        <div className={styles.contactMain} data-reveal><h2 id="contact-heading">What&apos;s next?<br /><span>Let&apos;s build it.</span></h2><a className={styles.contactArrow} href={`mailto:${company.email}`} aria-label={`Email TOPFX at ${company.email}`}><Arrow diagonal /></a></div>
-        <div className={styles.contactDetails} data-reveal><p>Have an idea, a question, or a different perspective?<br />We&apos;d love to hear from you.</p><div><a href={`mailto:${company.email}`}>{company.email}<Arrow diagonal /></a><a href={company.phoneHref}>{company.phone}<Arrow diagonal /></a></div></div>
+        <div className={styles.contactTop}><span>HONG KONG ROOTS. EVERYDAY POSSIBILITIES.</span></div>
+        <div className={styles.contactMain} data-reveal><h2 id="contact-heading">Built in Hong Kong.<br /><span>Made for everyday.</span></h2>{company.email && <a className={styles.contactArrow} href={`mailto:${company.email}`} aria-label={`Email ${company.name} at ${company.email}`}><Arrow diagonal /></a>}</div>
+        <div className={styles.contactDetails} data-reveal><p>{company.legalName}<br />{company.location}</p><div>{company.email && <a href={`mailto:${company.email}`}>{company.email}<Arrow diagonal /></a>}{company.phone && <a href={company.phoneHref}>{company.phone}<Arrow diagonal /></a>}</div></div>
       </section>
     </main>
-    <footer className={`${styles.container} ${styles.footer}`}><div className={styles.footerTop}><a className={styles.brand} href="#top" aria-label="TOPFX home"><BrandMark />TOPFX</a><span>Intelligence, made everyday.</span></div><div className={styles.footerBottom}><span>© {new Date().getFullYear()} {company.legalName} All rights reserved.</span><a className={styles.backToTop} href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+    <footer className={`${styles.container} ${styles.footer}`}><div className={styles.footerTop}><a className={styles.brand} href="#top" aria-label="EVONOVA home"><BrandMark />EVONOVA</a><span>Intelligence, made everyday.</span></div><div className={styles.footerBottom}><span>© {new Date().getFullYear()} {company.legalName} All rights reserved.</span><a className={styles.backToTop} href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
     <PageMotion />
   </div>;
 }

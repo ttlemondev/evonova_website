@@ -33,10 +33,11 @@ const html = await response.text();
 assert.match(html, /<html lang="en"/);
 assert.equal((html.match(/<html(?:\s|>)/g) || []).length, 1, 'One root html element');
 assert.equal((html.match(/<body(?:\s|>)/g) || []).length, 1, 'One root body element');
-for (const text of ['Intelligence,', 'made everyday.', 'PokeVid', 'iPulse', 'mailto:contact@topfx.top', 'tel:+658287709']) {
+for (const text of ['Intelligence,', 'made everyday.', 'PokeVid', 'iPulse', 'EVONOVA LIMITED', 'BASED IN HONG KONG.', 'https://evonova.tech/en']) {
   assert.ok(html.includes(text), `Missing ${text}`);
 }
 for (const id of ['hero', 'products', 'pokevid', 'ipulse', 'approach', 'solutions', 'company', 'contact']) {
   assert.equal((html.match(new RegExp(`id="${id}"`, 'g')) || []).length, 1, `Expected one section or legacy anchor: ${id}`);
 }
-console.log('PASS English page, document structure, section targets and preserved contact links');
+assert.doesNotMatch(html, /topfx|singapore|mailto:|tel:|github\.com\/topfx|twitter\.com\/topfx/i, 'Old branding and unconfirmed contact channels must not appear');
+console.log('PASS English page, document structure, section targets, Evonova identity and hidden contact channels');
