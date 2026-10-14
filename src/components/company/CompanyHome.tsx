@@ -2,7 +2,7 @@ import Image from 'next/image';
 import CompanyNav from './CompanyNav';
 import Approach from './Approach';
 import PageMotion from './PageMotion';
-import { AppleStore, Arrow, BrandMark, PlayStore } from './Icons';
+import { Arrow, BrandMark } from './Icons';
 import { company, products } from './company-data';
 import styles from './company.module.css';
 
@@ -48,7 +48,6 @@ export default function CompanyHome() {
               <div className={styles.productIdentity}><Image src={products.pokevid.icon} alt="PokeVid app icon" width={52} height={52} /><div><h3>PokeVid</h3><span>AI VIDEO &amp; IMAGE CREATION</span></div><span className={styles.platform}>Android</span></div>
               <h4>Give your imagination a little motion.</h4><p>Turn a prompt into a video, bring a photo to life, or explore a new visual style. PokeVid makes AI-powered creation feel approachable.</p>
               <ul className={styles.featureTags}><li>Text to video</li><li>Photo animation</li><li>Creative templates</li></ul>
-              <a className={styles.storeLink} href={products.pokevid.store} target="_blank" rel="noopener noreferrer"><PlayStore />Explore on Google Play<Arrow diagonal /><span className={styles.srOnly}> (opens in a new tab)</span></a>
             </div>
           </article>
           <article className={styles.productCard} id="ipulse" data-reveal="later">
@@ -63,7 +62,6 @@ export default function CompanyHome() {
               <div className={styles.productIdentity}><Image src={products.ipulse.icon} alt="iPulse app icon" width={52} height={52} /><div><h3>iPulse</h3><span>EVERYDAY WELLBEING</span></div><span className={styles.platform}>iPhone</span></div>
               <h4>A closer connection to your everyday.</h4><p>Check your heart rate with your iPhone camera, keep up with healthy habits, and make space for a more mindful daily routine.</p>
               <ul className={styles.featureTags}><li>Heart rate</li><li>Habit tracking</li><li>Emotional wellbeing</li></ul>
-              <a className={styles.storeLink} href={products.ipulse.store} target="_blank" rel="noopener noreferrer"><AppleStore />Explore on the App Store<Arrow diagonal /><span className={styles.srOnly}> (opens in a new tab)</span></a>
               <p className={styles.healthNote}>For personal wellness and informational use. Not a substitute for professional medical advice.</p>
             </div>
           </article>
