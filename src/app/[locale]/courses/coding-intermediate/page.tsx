@@ -4,7 +4,7 @@ import CourseOutline from '@/components/courses/CourseOutline';
 import CourseCTA from '@/components/courses/CourseCTA';
 
 export const metadata: Metadata = {
-  title: '完整生态与团队自动化协作 - TOPFX',
+  title: '完整生态与团队自动化协作 - EVONOVA',
   description: '从"个人单兵作战"升级为"团队协同规范"，认知并掌握完整的 Claude Code 扩展生态',
 };
 

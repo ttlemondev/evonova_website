@@ -1,9 +1,12 @@
 export const company = {
-  name: 'TOPFX',
-  legalName: 'TOPFX PTE. LTD.',
-  email: 'contact@topfx.top',
-  phone: '+65 8287709',
-  phoneHref: 'tel:+658287709',
+  name: 'EVONOVA',
+  legalName: 'EVONOVA LIMITED',
+  url: 'https://evonova.tech',
+  location: 'Hong Kong',
+  // Keep contact channels hidden until the company's details are confirmed.
+  email: '',
+  phone: '',
+  phoneHref: '',
 } as const;
 
 export const products = {

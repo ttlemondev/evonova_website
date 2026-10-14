@@ -1,19 +1,22 @@
+import { company } from '@/components/company/company-data';
+
 // Site configuration and constants
 
 export const SITE_CONFIG = {
-  name: 'TOPFX',
-  fullName: 'TOPFX PTE. LTD.',
+  name: company.name,
+  fullName: company.legalName,
+  url: company.url,
   englishName: '',
   slogan: '让每个人都能驾驭 AI',
   description: '专注于 AI 原生组织转型与个人 AI 能力提升的专业培训机构',
   contact: {
-    email: 'contact@topfx.top',
-    phone: '+65 8287709',
+    email: company.email,
+    phone: company.phone,
   },
   social: {
-    github: 'https://github.com/topfx',
-    twitter: 'https://twitter.com/topfx',
-    linkedin: 'https://linkedin.com/company/topfx',
+    github: '',
+    twitter: '',
+    linkedin: '',
   },
 } as const;
 
